@@ -1,0 +1,51 @@
+/* FONT SIZE  */
+
+$baseFontSize: 16px;
+$preTitleFontSize: 32px;
+$titleFontSize: 64px;
+$titleSecondFontSize: 36px;
+
+
+/* FONT FAMILY */
+
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontTimesNewRoman: 'Times New Roman', serif;
+$fontFilm: 'Film P3', sans-serif;
+
+
+/* COLORS  */
+
+$AccentColor: #F3C653;
+
+$AccentWithTransparentColor: rgba(243, 198, 83, 0.7);
+
+//for text
+$textColorGrey: #7A7A7A;
+$textColorDarkGrey: #5F5F5F;
+$textColorBlack: #000000;
+$textColorBrown: #C79002;
+
+$titleColorWhite: #FFFFFF;
+$titleColorGrey: #828282;
+$titleColorDarkGrey: #494848;
+$preTitleColorGray: #B4B4B4;
+
+
+//for button
+$btnWhiteColor: #FFFFFF;
+$btnBlackColor: #000000;
+$btnGreyColor: rgba(0, 0, 0, 0.4);
+
+
+//for icon and link
+$disabledBrownColor: #C79002;
+$disabledWhiteColor: #FFFFFF;
+
+
+//back-ground color
+$backGroundBeige: #FFFDEE;
+
+
+/* TRANSITION  */
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
