@@ -1,0 +1,93 @@
+.footer{
+  background-color: #0E0C07;
+}
+    
+
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1280px){
+    display: flex;
+    flex-wrap: nowrap ;
+  }
+}
+
+.footer-logo{
+padding-left: 44px;
+padding-bottom: 99px;
+padding-top: 98px;
+
+margin-right: 78px;
+
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.07;
+letter-spacing: 0.3em;
+
+color: #F3C653;
+}
+
+
+.footer-nav{
+  display: flex;
+  margin-bottom: 34px;
+  padding-top: 40px;
+padding-right: 41px;
+}
+
+
+.footer-soc-list{
+  display: flex;
+  @media screen and (min-width: 1024px){
+      display: block;
+      
+  }
+}
+.footer-soc-list__item{
+  @media screen and (min-width: 1024px){
+      border: 0.5px solid #F3C653;
+      border-radius: 2px;
+      
+  }
+
+}
+.footer-soc-list__item:not(:last-child){
+margin-right: 23px;
+@media screen and (min-width: 1024px){
+  margin-right: 0;   
+}
+}
+
+.footer-nav-list__item:not(:last-child){
+  margin-bottom: 16px;
+  @media screen and (min-width: 1024px){
+      margin-bottom: 12px;
+}
+}
+
+.footer-nav-list__link{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #F3C653;
+}
+
+.footer-soc-list__icon {
+  fill:#F3C653;
+}
+
+
+
