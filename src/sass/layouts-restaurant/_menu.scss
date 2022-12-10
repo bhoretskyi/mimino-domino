@@ -2,17 +2,10 @@ td {
   outline: 1px solid black;
 }
 
-.container {
-  width: 414px;
-  margin-left: auto;
-  margin-right: auto;
-
+.menu__flex-wrapper {
   @media screen and (min-width: 1024px) {
-    width: 1024px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
+    display: flex;
+    gap: 90px;
   }
 }
 
@@ -34,6 +27,12 @@ td {
   border-collapse: collapse;
 }
 
+.menu__table--down {
+  @media screen and (max-width: 1023px) {
+    margin-top: 16px;
+  }
+}
+
 .menu__title {
   margin-bottom: 32px;
 
@@ -44,7 +43,8 @@ td {
   text-transform: uppercase;
   color: #000000;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -58,14 +58,14 @@ td {
   line-height: 1.15;
   color: #000000;
 
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 20px;
+  }
+
   @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.17;
   }
-}
-
-.menu__table--down {
-  margin-top: 16px;
 }
 
 .menu__dish {
