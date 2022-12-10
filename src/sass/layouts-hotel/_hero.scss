@@ -1,0 +1,27 @@
+.hero {
+    background-color: black;
+
+    &__title {
+        font-family: $fontFilm;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 103px;
+        letter-spacing: 0.3em;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    &__address {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        color: #E5E5E5;
+    }
+}
