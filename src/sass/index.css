@@ -1,4 +1,7 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/modern-normalize/modern-normalize.css'; /* FONT SIZE  */
+/* FONT FAMILY */
+/* COLORS  */
+/* TRANSITION  */
 @font-face {
   font-family: "montserrat";
   src: url(../fonts/montserrat-bold.ttf) format("truetype");
@@ -67,6 +70,46 @@ h6 {
   text-decoration: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #7A7A7A;
+  background-color: #FFFDEE;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 85px;
+    padding-left: 85px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -79,4 +122,88 @@ h6 {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.amenities__title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  line-height: 1.15625;
+}
+
+.amenities__title-text {
+  text-align: left;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1024px) {
+  .amenities__title-text {
+    display: block;
+    max-width: 757px;
+  }
+}
+
+.amenities__item {
+  margin-top: 32px;
+}
+
+.amenities__item-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+  .anenities__block-text {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .amenities__block {
+    width: 100%;
+    min-height: 43px;
+    max-height: 83px;
+    max-width: 450px;
+  }
+  .amenities__block:not(:first-child) {
+    margin-right: 50px;
+  }
+}
+
+.amenities__item-text {
+  margin-top: 16px; /*
+@include tablet {
+ display: inline-block;
+ max-width: 400px;
+&:not(:last-child) {
+        margin-right: 80px;
+    }
+}
+@include desktop {
+     max-width:495px;
+&:not(:first-child) {
+        margin-right: 150px;
+    }
+}*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.amenities__title {
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #000000;
 }/*# sourceMappingURL=index.css.map */
