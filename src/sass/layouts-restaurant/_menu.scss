@@ -2,28 +2,6 @@ td {
   outline: 1px solid black;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .container {
   width: 414px;
   margin-left: auto;
@@ -91,7 +69,9 @@ img {
 }
 
 .menu__dish {
-  width: 190px;
+  padding-bottom: 4px;
+
+  width: 225px;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 14px;
@@ -104,6 +84,10 @@ img {
     font-size: 16px;
     line-height: 1.25;
   }
+}
+
+.menu__dish--down {
+  padding-top: 8px;
 }
 
 .menu__portions {
@@ -142,4 +126,11 @@ img {
   letter-spacing: 0.02em;
 
   color: #000000;
+}
+
+.menu-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
 }
