@@ -6,7 +6,12 @@ td {
   @media screen and (min-width: 1024px) {
     display: flex;
     gap: 90px;
+    justify-content: space-between;
   }
+}
+
+.menu__table:not(:first-child) {
+  margin-top: 20px;
 }
 
 .section-restaurant__menu {
@@ -80,6 +85,10 @@ td {
 
   color: #000000;
 
+  @media screen and (min-width: 1024px) {
+    width: 245px;
+  }
+
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.25;
@@ -99,10 +108,14 @@ td {
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: 1024px) {
+    width: 150px;
+  }
 }
 
 .menu__price {
-  width: 65px;
+  width: 66px;
   text-align: right;
   font-family: 'Montserrat';
   font-weight: 700;
@@ -111,6 +124,10 @@ td {
   letter-spacing: 0.02em;
 
   color: #000000;
+
+  @media screen and (min-width: 1024px) {
+    width: 70px;
+  }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
@@ -133,4 +150,10 @@ td {
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
