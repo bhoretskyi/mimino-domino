@@ -1,0 +1,145 @@
+td {
+  outline: 1px solid black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.section-restaurant__menu {
+  padding: 32px 15px;
+  background-color: #f0ecd6;
+
+  @media screen and (min-width: 1024px) {
+    padding: 58px 47px 40px 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 58px 85px 60px 85px;
+  }
+}
+
+.menu__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu__title {
+  margin-bottom: 32px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media screen and (max-width: 1279px) {
+  }
+}
+
+.menu__category {
+  padding-bottom: 16px;
+
+  text-align: left;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.menu__table--down {
+  margin-top: 16px;
+}
+
+.menu__dish {
+  width: 190px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__portions {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: #000000;
+}
+
+.menu__price {
+  width: 65px;
+  text-align: right;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__description {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
