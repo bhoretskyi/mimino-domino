@@ -1,0 +1,209 @@
+// td {
+//   outline: 1px solid black;
+// }
+
+.menu__flex-wrapper {
+  @include tablet {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    gap: 140px;
+  }
+}
+
+.menu__table:not(:first-child) {
+  margin-top: 20px;
+}
+
+.section-restaurant__menu {
+  position: relative;
+  padding: 32px 15px;
+  background-color: #f0ecd6;
+
+  @include tablet {
+    padding: 58px 47px 40px 47px;
+  }
+
+  @include desktop {
+    padding: 58px 85px 60px 85px;
+  }
+}
+
+.menu__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu__table--down {
+  @media screen and (max-width: 1023px) {
+    margin-top: 16px;
+  }
+}
+
+.menu__title {
+  margin-bottom: 32px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: $textColorBlack;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.menu__category {
+  padding-bottom: 16px;
+
+  text-align: left;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $textColorBlack;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.menu__dish {
+  padding-bottom: 4px;
+
+  width: 225px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+
+  color: $textColorBlack;
+
+  @include tablet {
+    width: 258px;
+  }
+
+  @include desktop {
+    width: 265px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__dish--down {
+  padding-top: 8px;
+}
+
+.menu__portions {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: $textColorBlack;
+
+  @include tablet {
+    width: 150px;
+  }
+}
+
+.menu__price {
+  width: 66px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+
+  color: $textColorBlack;
+
+  @include tablet {
+    width: 70px;
+  }
+
+  @include desktop {
+    width: 75px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.menu__description {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: $textColorBlack;
+}
+
+.menu-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+
+  @include tablet {
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+// ----------------------------------------Горизонтальні лінії
+.menu__flex-wrapper::after {
+  @include tablet {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 759px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+
+  @include desktop {
+    left: 942px;
+  }
+}
+
+.menu__flex-wrapper::before {
+  @include desktop {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 640px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+}
+
+.menu__title::before {
+  @include desktop {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 338px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+}
