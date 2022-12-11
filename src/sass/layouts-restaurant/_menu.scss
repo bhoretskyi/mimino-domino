@@ -9,7 +9,7 @@ td {
     justify-content: space-between;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     gap: 140px;
   }
 }
@@ -19,6 +19,7 @@ td {
 }
 
 .section-restaurant__menu {
+  position: relative;
   padding: 32px 15px;
   background-color: #f0ecd6;
 
@@ -57,14 +58,20 @@ td {
   }
 }
 
-.menu__title::after {
+.menu__flex-wrapper::after {
   @media screen and (min-width: 1024px) {
     content: '';
-    // width: 616px;
+    width: 616px;
     position: absolute;
+    top: 0;
+    left: 759px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 942px;
   }
 }
 
@@ -101,7 +108,7 @@ td {
   color: #000000;
 
   @media screen and (min-width: 1024px) {
-    width: 245px;
+    width: 258px;
   }
 
   @media screen and (min-width: 1280px) {
