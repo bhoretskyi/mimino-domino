@@ -1,1 +1,55 @@
+.about-restaurant {
+  background: $backGroundBeige;
+  &_container {
+    padding-top: 16px;
+    padding-bottom: 20px;
 
+    @include tablet {
+      padding-top: 120px;
+      padding-bottom: 32px;
+    }
+    @include desktop {
+      padding-top: 120px;
+      padding-bottom: 50px;
+    }
+  }
+}
+.about-restaurant_pre_title {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 1.15;
+  color: $preTitleColorGray;
+  margin-bottom: 12px;
+}
+.brand-name {
+  font-family: 'Film P3';
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: $titleColorDarkGrey;
+  margin-bottom: 12px;
+}
+.about-restaurant_text_up {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $textColorDarkGrey;
+  margin-bottom: 28px;
+}
+.about-restaurant_text_down {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $textColorBrown;
+  max-width: 163px;
+}
+.about-restaurant_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
