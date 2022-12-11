@@ -1,0 +1,124 @@
+.modal-table {
+    padding: 15px;
+    width: 100%;
+
+    @include mobile {
+        max-width: 414px;
+    }
+
+    background-color: $backGroundBeige;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__close-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    right: 4;
+    top: 3;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.form__heading {
+    font-family: $fontTimesNewRoman;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 24px;
+    // ПОМЕНЯТЬ-----------------------
+
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: $textColorBlack;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.form__room-stats {
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $baseFontSize;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $textColorBrown;
+    margin-bottom: 24px;
+}
+
+.lable__descript-par {
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $baseFontSize;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $textColorBrown;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.lable__input-count,
+.lable__input-price {
+    margin-bottom: 8px;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $textColorBrown;
+    font-family: $fontTimesNewRoman;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 24px;
+    // ПОМЕНЯТЬ-----------------------
+
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: #808080;
+    // ПОМЕНЯТЬ-----------------------
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.lable__input-count {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form__booking-button {
+    background: $btnBlackColor;
+    border: 1px solid $AccentColor;
+    border-radius: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    color: $titleColorWhite;
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 20px;
+    // ПОМЕНЯТЬ-----------------------
+
+    line-height: 1.2;
+    text-align: center;
+    height: 64px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
