@@ -5,47 +5,45 @@ $preTitleFontSize: 32px;
 $titleFontSize: 64px;
 $titleSecondFontSize: 36px;
 
-
 /* FONT FAMILY */
 
 $fontMontserrat: 'Montserrat', sans-serif;
 $fontTimesNewRoman: 'Times New Roman', serif;
 $fontFilm: 'Film P3', sans-serif;
 
-
 /* COLORS  */
 
-$AccentColor: #F3C653;
+$AccentColor: #f3c653;
 
 $AccentWithTransparentColor: rgba(243, 198, 83, 0.7);
 
 //for text
-$textColorGrey: #7A7A7A;
-$textColorDarkGrey: #5F5F5F;
+$textColorGrey: #7a7a7a;
+$textColorDarkGrey: #5f5f5f;
 $textColorBlack: #000000;
-$textColorBrown: #C79002;
+$textColorBrown: #c79002;
 
-$titleColorWhite: #FFFFFF;
+$titleColorWhite: #ffffff;
 $titleColorGrey: #828282;
 $titleColorDarkGrey: #494848;
-$preTitleColorGray: #B4B4B4;
-
+$preTitleColorGray: #b4b4b4;
 
 //for button
-$btnWhiteColor: #FFFFFF;
+$btnWhiteColor: #ffffff;
 $btnBlackColor: #000000;
 $btnGreyColor: rgba(0, 0, 0, 0.4);
 
-
 //for icon and link
-$disabledBrownColor: #C79002;
-$disabledWhiteColor: #FFFFFF;
-
+$disabledBrownColor: #c79002;
+$disabledWhiteColor: #ffffff;
 
 //back-ground color
-$backGroundBeige: #FFFDEE;
-
+$backGroundBeige: #fffdee;
 
 /* TRANSITION  */
 
 $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//shadow
+
+$SmallShadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);

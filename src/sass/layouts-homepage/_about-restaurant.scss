@@ -37,6 +37,7 @@
   letter-spacing: 0.02em;
   color: $textColorDarkGrey;
   margin-bottom: 28px;
+  max-width: 258px;
 }
 .about-restaurant_text_down {
   font-family: 'Montserrat';
@@ -47,9 +48,21 @@
   color: $textColorBrown;
   max-width: 163px;
 }
+.about-restaurant_img-interior {
+  margin-left: auto;
+  width: 59vw;
+  max-width: 244px;
+  box-shadow: $SmallShadow;
+}
 .about-restaurant_box {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
+  margin: 32px 0;
 }
+.about-restaurant_slider {
+  margin-left: auto;
+}
+// .one-time {
+//   margin-left: auto;
+// }
