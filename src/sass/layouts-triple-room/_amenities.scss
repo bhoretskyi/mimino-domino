@@ -1,5 +1,86 @@
+.amenities {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include tablet {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+
 .amenities__title {
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: $fontTimesNewRoman;
+    font-weight: 400;
+    color: $textColorBlack;
+    font-size: 32px;
+    line-height: calc(37/32);
+}
+
+.amenities__title-text {
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+
+    @include tablet {
+        display: block;
+        max-width: 757px;
+    }
+}
+
+.amenities__item {
+    margin-top: 32px;
+}
+
+.amenities__item-title {
+    font-family: $fontTimesNewRoman;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
     color: $textColorBlack;
 }
 
+.anenities__block-text {
+    margin-top: 16px;
+
+    @include tablet {
+        display: flex;
+        gap: 80px;
+    }
+
+    @include desktop {
+        display: flex;
+        gap: 133px;
+    }
+
+}
+
+.amenities__block {
+    @include tablet {
+        width: 100%;
+        min-height: 43px;
+        max-height: 83px;
+        max-width: 400px;
+
+        &:not(:first-child) {
+            margin-right: 50px;
+        }
+    }
+}
+
+.amenities__item-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+}
+
+.button__amenities {
+    display: block;
+    margin-top: 40px;
+    width: 384px;
+    height: 64px;
+}
