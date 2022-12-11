@@ -1,10 +1,17 @@
 .modal-table {
     padding: 15px;
-    width: 100%;
-
+    width: 100%;;
     @include mobile {   
         max-width: 414px;
     }
+
+    // @include tablet {
+    //     max-width: 712px;
+    // }
+
+    // @include desktop {
+        
+    // }
 
     background-color: $backGroundBeige;
     border-radius: 2px;
@@ -15,7 +22,7 @@
 }
 
 .modal__close-button {
-    position: absolute;
+    position: relative;
     width: 24px;
     height: 24px;
     display: flex;
@@ -23,8 +30,11 @@
     top: 3;
     padding: 0;
     cursor: pointer;
-    border: none;
-    background-color: transparent;
+    color: #808080;
+}
+
+.button-cross-svg{
+    fill:$btnBlackColor;
 }
 
 .form__heading {
@@ -113,7 +123,6 @@
     font-weight: 500;
 
     font-size: 20px;
-    // ПОМЕНЯТЬ-----------------------
 
     line-height: 1.2;
     text-align: center;
