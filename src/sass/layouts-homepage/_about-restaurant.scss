@@ -60,17 +60,42 @@
   gap: 20px;
   margin: 32px 0;
 }
-
+.about-restaurant_slider {
+}
 .slick-track {
   display: flex;
   gap: 25px;
   justify-content: flex-end;
+  min-width: 0;
 }
 .slick-list {
   margin-right: -15px;
 }
+.about-restaurant_slick {
+  position: relative;
+}
+.slick-next .slick-arrow {
+}
 .slick-prev:before {
   content: '';
+  width: 32px;
+  height: 32px;
+  background-image: url(/src/images/svg/arrow-left.svg);
+  color: $btnBlackColor;
 }
-.slick-next:before {
+// .slick-prev {
+//   width: 32px;
+//   height: 32px;
+//   background-color: brown;
+//   top: 275px;
+//   left: 218px;
+// }
+.about-restaurant_slick .slick-arrow {
+  position: absolute;
+  top: 110%;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  z-index: 10;
 }
