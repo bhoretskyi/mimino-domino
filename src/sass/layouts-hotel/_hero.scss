@@ -1,0 +1,151 @@
+.hero {
+    max-width: 1280px;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+
+    @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-mob-2x.jpg);
+    }
+
+         @include tablet {
+             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-tab.jpg);
+    
+             @include retina {
+                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-tab-2x.jpg);
+             }
+         }
+    
+         @include desktop {
+             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-desk.jpg);
+    
+             @include retina {
+                 background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/joint-images/hotel-hero-desk-2x.jpg);
+             }
+         }
+
+    &__title {
+        max-width: 303px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        padding-top: 181px;
+        font-family: $fontFilm;
+        font-weight: 700;
+        font-size: 92px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: $titleColorWhite;
+
+        @include mobile {
+            font-size: 96px;
+        }
+        @include tablet {
+            max-width: 404px;
+            font-size: 128px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 178px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: $titleColorWhite;
+    }
+
+   
+}
+
+.hero__container { 
+    position: relative;
+    max-width: 414px;   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include tablet {
+        max-width: 1024px;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+
+.wrap {
+   @include tablet {
+    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+   }
+}
+
+.address-container {
+    position: absolute;
+    top: 64;
+    right: 15;
+    margin: 0;
+    max-width: 210px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: $AccentColor;
+
+    @include tablet {
+        position: static;
+    }
+}
+
+.address {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    padding-left: 34px;
+}
+
+.icon-location {
+    position: absolute;
+    top: 13px;
+    left: 6;
+    fill: $AccentColor;
+}
+
+.address__link {
+    min-width: 210px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #E5E5E5;
+}
+
+.btn-list{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+}
+
