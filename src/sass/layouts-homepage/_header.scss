@@ -1,0 +1,83 @@
+.top{
+    position: absolute;
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    background-color: transparent;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+
+.header-contacts{
+    display: flex;
+    background-color: transparent;
+}
+.contacts-list{
+    display: flex;
+    gap: 20px;
+}
+.contacts-item{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.logo{
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.text-nav{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+}
+
+.is-hidden{
+    display: none;
+}
+.soc{
+    background-color: transparent;
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.soc-list{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+   
+}
+
+.icon{
+    fill:#F3C653;
+}
+
+.svg-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
