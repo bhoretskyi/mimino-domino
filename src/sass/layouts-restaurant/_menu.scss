@@ -58,24 +58,6 @@
   }
 }
 
-.menu__flex-wrapper::after {
-  @include tablet {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: 0;
-    left: 759px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-
-  @include desktop {
-    left: 942px;
-  }
-}
-
 .menu__category {
   padding-bottom: 16px;
 
@@ -176,5 +158,52 @@
     margin-top: 60px;
     margin-right: 0;
     margin-left: auto;
+  }
+}
+
+// ----------------------------------------Горизонтальні лінії
+.menu__flex-wrapper::after {
+  @include tablet {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 759px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+
+  @include desktop {
+    left: 942px;
+  }
+}
+
+.menu__flex-wrapper::before {
+  @include desktop {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 640px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+}
+
+.menu__title::before {
+  @include desktop {
+    content: '';
+    width: 616px;
+    position: absolute;
+    top: 0;
+    left: 338px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    transform: rotate(90deg);
+    transform-origin: top left;
   }
 }
