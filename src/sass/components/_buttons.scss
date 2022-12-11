@@ -1,0 +1,67 @@
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $AccentColor;
+
+    background: $btnGreyColor;
+    border: 2px solid $btnWhiteColor;
+    border-radius: 25px;
+    width: 236px;
+    min-height: 48px;
+    align-items: center;
+    text-align: center;
+
+    transition: background-color $transition;
+    &:hover, &:focus {
+        background-color: $btnWhiteColor;
+    }
+}
+
+.btn__desktop {
+    background: $btnBlackColor;
+}
+
+.btn__room {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    
+    font-size: 20px;
+    line-height: 1.2;
+    color: $titleColorWhite;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+
+    background: $btnBlackColor;
+    border: 1px solid $AccentColor;
+    border-radius: 25px;
+    
+    width: 384px;
+    min-height: 64px;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 1.21;
+        width: 434px;
+    }
+
+    transition: background-color $transition;
+    transition: color $transition;
+    &:hover, &:focus {
+        color: $textColorBlack;
+        background-color: $AccentColor;
+    }
+}
+
+.btn__modal {
+    border-radius: 2px;
+
+    @include tablet {
+        width: 592px;
+    }
+}
