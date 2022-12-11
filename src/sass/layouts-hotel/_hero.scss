@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     max-width: 1280px;
     height: 740px;
     margin-left: auto;
@@ -11,29 +12,43 @@
     background-color: black;
 
     &__title {
+        max-width: 303px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        padding-top: 181px;
         font-family: $fontFilm;
         font-weight: 700;
         font-size: 96px;
-        line-height: 103px;
+        line-height: 1.07;
         letter-spacing: 0.3em;
+        text-transform: uppercase;
         color: $titleColorWhite;
     }
 
     &__text {
+        margin-bottom: 178px;
         font-weight: 600;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
         color: $titleColorWhite;
     }
 }
 
-.hero__container {
+.hero__container {    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .address-container {
+    position: absolute;
+    top: 64;
+    right: 15;
+    margin: 0;
     max-width: 210px;
     border: 1px solid;
     border-radius: 2px;
@@ -42,30 +57,34 @@
 
 .address {
     display: flex;
-    text-align: left;    
     width: 100%;
     position: relative;
+    padding: 8px;
+    padding-left: 34px;
 }
 
 .icon-location {
     position: absolute;
     top: 13px;
-    left: 6px;
+    left: 6;
     fill: $AccentColor;
 }
 
 .address__link {
     min-width: 210px;
-    padding-left: 34px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     letter-spacing: 0.01em;
+    text-align: left;
     color: #E5E5E5;
+}
+
+.btn-list{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
 }
 
