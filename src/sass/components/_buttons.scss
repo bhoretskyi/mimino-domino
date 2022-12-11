@@ -37,7 +37,7 @@
     align-items: center;
     text-align: center;
 
-    background: $btnBlackColor;
+    background-color: $btnBlackColor;
     border: 1px solid $AccentColor;
     border-radius: 25px;
     
@@ -49,9 +49,9 @@
         line-height: 1.21;
         width: 434px;
     }
-
+     transition: color $transition;
     transition: background-color $transition;
-    transition: color $transition;
+   
     &:hover, &:focus {
         color: $textColorBlack;
         background-color: $AccentColor;
