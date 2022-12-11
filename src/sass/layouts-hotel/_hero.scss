@@ -1,4 +1,13 @@
 .hero {
+    max-width: 1280px;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/main/main-bg-hotel-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: black;
 
     &__title {
@@ -7,7 +16,7 @@
         font-size: 96px;
         line-height: 103px;
         letter-spacing: 0.3em;
-        color: #FFFFFF;
+        color: $titleColorWhite;
     }
 
     &__text {
@@ -15,13 +24,48 @@
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0.02em;
-    }
-
-    &__address {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 0.01em;
-        color: #E5E5E5;
+        color: $titleColorWhite;
     }
 }
+
+.hero__container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.address-container {
+    max-width: 210px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: $AccentColor;
+}
+
+.address {
+    display: flex;
+    text-align: left;    
+    width: 100%;
+    position: relative;
+}
+
+.icon-location {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    fill: $AccentColor;
+}
+
+.address__link {
+    min-width: 210px;
+    padding-left: 34px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #E5E5E5;
+}
+
