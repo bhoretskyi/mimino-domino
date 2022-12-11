@@ -1,3 +1,11 @@
+img{
+    display: block;
+  max-width: 100%;
+  height: auto;
+
+  width: 100%;
+}
+
 .contacts {
     display: block;
     max-width: 414px;
@@ -7,13 +15,7 @@
   padding-bottom: 32px;
   background-color: $backGroundBeige;
 }
-img{
-    display: block;
-  max-width: 100%;
-  height: auto;
 
-  width: 100%;
-}
 .contacts__title {
   font-family: $fontFilm;
   font-weight: 700;
@@ -54,29 +56,78 @@ color: $textColorBrown;
 }
 
 .address__link {
-   
+        display: flex;
+    align-items: center;
 font-family: $fontMontserrat;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.21;
-
-align-items: center;
 letter-spacing: 0.02em;
 
+}
+
+.map__link {
+       display: flex;
+       align-items: center;
+   font-family:  $fontMontserrat;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.01em;
+
+color: $titleColorDarkGrey;
+}
+
+.tel__wrap{
+    display: flex;
+        margin-right: 116px;
+justify-content: center;
+    padding: 9px 8px 7px 8px;
 color: $titleColorDarkGrey;
 background: $titleColorWhite;
 border: 0.5px solid $AccentColor;
 border-radius: 2px;
 }
 
+.address__wrap{
+    width: 260px;
+        display: flex;
+    justify-content: space-between;
+    padding: 9px 8px 7px 8px;
+color: $titleColorDarkGrey;
+background: $titleColorWhite;
+border: 0.5px solid $AccentColor;
+border-radius: 2px;
+}
+.map__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 76px;
+padding: 8px 33px 7px 10px;
+margin-left: auto;
+color: $titleColorDarkGrey;
+background: $titleColorWhite;
+border: 0.5px solid $AccentColor;
+border-radius: 2px;
+
+}
+
 .connect__icon {
-    background: $textColorBrown;
+    fill: $textColorBrown;
+    margin-right: 8px;
 
 }
 
 .address__items{
     display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  align-items: baseline;
+}
+.contacts__map {
+    margin-top: 32px;
+border: 1px solid #BABABA;
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
 }
