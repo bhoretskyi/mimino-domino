@@ -60,9 +60,17 @@
   gap: 20px;
   margin: 32px 0;
 }
-.about-restaurant_slider {
-  margin-left: auto;
+
+.slick-track {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
 }
-// .one-time {
-//   margin-left: auto;
-// }
+.slick-list {
+  margin-right: -15px;
+}
+.slick-prev:before {
+  content: '';
+}
+.slick-next:before {
+}
