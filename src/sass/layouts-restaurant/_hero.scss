@@ -1,4 +1,4 @@
-.hero{
+.hero-restaurant {
     padding-top: 150px;
     padding-bottom: 20px;
     padding-left: 15px;
@@ -112,6 +112,7 @@ font-size: 16px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #FFFFFF;
+text-align: center;
 margin-bottom: 44px;
 @include tablet {
     font-size: 20px;
@@ -131,6 +132,7 @@ font-size: 32px;
 line-height: 1.15;
 letter-spacing: 0.05em;
 color: #FDFBEC;
+text-align: center;
 margin-bottom: 113px;
 @include tablet {
 font-size: 36px;
