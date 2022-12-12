@@ -1,62 +1,92 @@
-<section class="contacts">
+<section class="contacts-sect">
+   <div class="container-bg">  </div>
+  <div class="container-line1">  </div>
+  <div class="container-line2">  </div>
+  <div class="container-line3">  </div>
   <div class="container">
-    <h2 class="visually-hidden">Контакти</h2>
-    <h3 class="contacts__title">MIMIHO</h3>
-    <p class="contacts__subtitle">Ресторанно-готельний комплекс</p>
-    <address class="address">
-      <ul class="address__list list">
-        <li class="address__items">
-          <p class="address__text">Ресторан</p>
-          <div class="tel__wrap">
-          <a class="address__link link" href="tel:095 555 95 33"
-            ><svg class="connect__icon" height="24" width="24">
-              <use href="./images/svg/icons.svg#icon-phone"></use></svg
-            >095 555 95 33</a
-          >
-          </div>
-        </li>
-        <li class="address__items">
-          <p class="address__text">Готель</p>
-<div class="address__wrap">
-          <a class="address__link link" href="tel:066 849 10 89"
-            ><svg class="connect__icon" height="24" width="24">
-              <use href="./images/svg/icons.svg#icon-phone"></use></svg
-            >066 849 10 89</a
-          >
-          <a class="address__link link" href="tel:067 275 85 40"
-            >067 275 85 40</a
-          >
-</div>
-        </li>
-        <li class="address__items">
-          <div class="map__container">
-          <a
-            class="map__link  link"
-            href="https://goo.gl/maps/Zi2dASt6qGU1Xzwf8"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            ><svg class="connect__icon" height="24" width="24">
-              <use href="./images/svg/icons.svg#icon-location"></use></svg
-            >Україна, м. Полтава, вул. Маршала Бірюзова, 15
-          </a>
-          </div>
-        </li>
-      </ul>
-    </address>
-    <picture class="contacts__map">
-      <source
-        srcset="./images/main/map-desk.png 1x, ./images/main/map-desk-2x.png 2x"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="./images/main/map-tab.png 1x, ./images/main/map-tab-2x.png 2x"
-        media="(min-width: 1024px)"
-      />
-      <source
-        srcset="./images/main/map-mob.png 1x, ./images/main/map-mob-2x.png 2x"
-        media="(min-width: 414px)"
-      />
-      <img src="./images/main/map-mob.png" alt="Мапа" width="384" />
-    </picture>
+    
+    <div class="container-contacts__wrap">
+      <div class="container-contacts__inner">
+        <h2 class="visually-hidden">Контакти</h2>
+        <h3 class="contacts__title">MIMIHO</h3>
+        <p class="contacts__subtitle">Ресторанно-готельний комплекс</p>
+        <address class="contact__address">
+          <ul class="address__list list">
+            <li class="address__items">
+              <p class="address__text">Ресторан</p>
+              <div class="phone__wrap">
+                <a class="contacts-address__link link" href="tel:095 555 95 33"
+                  ><svg class="connect__icon" height="24" width="24">
+                    <use href="./images/svg/icons.svg#icon-phone"></use></svg
+                  >095 555 95 33</a
+                >
+              </div>
+            </li>
+            <li class="address__items address__items--rest">
+              <p class="address__text">Готель</p>
+              <div class="address__wrap">
+                <a
+                  class="contacts-address__link contacts-address__link--position link"
+                  href="tel:066 849 10 89"
+                  ><svg class="connect__icon" height="24" width="24">
+                    <use href="./images/svg/icons.svg#icon-phone"></use></svg
+                  >066 849 10 89</a
+                >
+                <a class="contacts-address__link link" href="tel:067 275 85 40"
+                  >067 275 85 40</a
+                >
+              </div>
+            </li>
+            <li class="address__items">
+              <div class="map__container">
+                <a
+                  class="map__link link"
+                  href="https://goo.gl/maps/Zi2dASt6qGU1Xzwf8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg class="connect__icon" height="24" width="24">
+                    <use href="./images/svg/icons.svg#icon-location"></use></svg
+                  >Україна, м. Полтава,<br />
+                  вул. Маршала Бірюзова, 15
+                </a>
+              </div>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="contacts__map">
+        <a
+          class="map__link link"
+          href="https://goo.gl/maps/Zi2dASt6qGU1Xzwf8"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <picture>
+            <source
+              srcset="
+                ./images/main/map-desk.png    1x,
+                ./images/main/map-desk-2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/main/map-tab.png    1x,
+                ./images/main/map-tab-2x.png 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/main/map-mob.png    1x,
+                ./images/main/map-mob-2x.png 2x
+              "
+              media="(min-width: 414px)"
+            />
+            <img src="./images/main/map-mob.png" alt="Мапа" width="384" />
+          </picture>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
