@@ -1,9 +1,16 @@
 .footer{
   background-color: #0E0C07;
-  max-width: 1280px;
+  max-width: 414px;
+  width: 100%;
+  min-width: 320px;
   margin: auto;
   @include tablet{
     justify-content: center;
+    max-width: 1024px;
+  }
+  @include desktop{
+    justify-content: center;
+    max-width: 1280px;
   }
 }
 
