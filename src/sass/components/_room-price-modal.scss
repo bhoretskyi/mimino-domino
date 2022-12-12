@@ -13,27 +13,38 @@
     }
 
     border-radius: 2px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background-color: $backGroundBeige;
 }
 
-.modal__close-button {
+.modal__close-button--price {
     position: absolute;
     width: 24px;
     height: 24px;
     display: flex;
-    right: 4;
-    top: 3;
+    right: 16;
+    top: 16;
     padding: 0;
+    right: 16;
+    top: 16;
     cursor: pointer;
+    fill: $btnBlackColor;
     border: none;
     background-color: transparent;
+    align-items: center;
+    justify-content: center;
 }
 
-.form__heading {
+.button-cross-svg--price {
+    fill: $btnBlackColor;
+    position: absolute;
+
+}
+
+.form__heading--price {
     font-family: $fontTimesNewRoman;
     font-style: normal;
     font-weight: 700;
@@ -55,7 +66,7 @@
             }
 }
 
-.form__room-name {
+.form__room-name--price {
     font-family:$fontTimesNewRoman;
     font-style: normal;
     font-weight: 700;  
@@ -72,7 +83,7 @@
     margin-bottom: 28px;
 }
 
-.form__room-stats {
+.form__room-stats--price {
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 500;
@@ -83,7 +94,7 @@
     margin-bottom: 20px;
 }
 
-.lable__descript-par {
+.lable__descript-par--price {
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 500;
@@ -101,15 +112,15 @@
         }
 }
 
-.form__space {
+.form__space--price {
     @include tablet {
     display: flex;
         justify-content: space-between;
     }
 }
 
-.lable__input-count,
-.lable__input-price {
+.lable__input-count--price,
+.lable__input-price--price {
     margin-bottom: 8px;
     outline: none;
     height: 54px;
@@ -142,13 +153,13 @@
         }
 }
 
-.lable__input-count {
+.lable__input-count--price {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.form__booking-button {
+.form__booking-button--price {
     background: $btnBlackColor;
     border: 1px solid $AccentColor;
     border-radius: 2px;
