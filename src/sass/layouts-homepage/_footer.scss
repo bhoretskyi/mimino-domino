@@ -129,13 +129,12 @@ margin-right: 163px;
   display: flex;
   @media screen and (min-width: 1024px){
       flex-direction: column-reverse;
-    display: inline-flex;
+      display: inline-flex;
       
   }
 }
-.footer-soc-list__item:not(:last-child){
+.footer-soc-list__item:not(:first-child){
   @media screen and (min-width: 1024px){
-     
       margin-bottom: 12px; 
   }
 
