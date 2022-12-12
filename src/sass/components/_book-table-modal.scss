@@ -1,8 +1,9 @@
 .modal-table {
+
     padding: 15px;
     width: 100%;
 
-    @include mobile {
+    @include mobile {   
         max-width: 414px;
     }
 
@@ -24,6 +25,7 @@
     padding: 0;
     cursor: pointer;
     border: none;
+    background-color: transparent;
     background-color: transparent;
 }
 

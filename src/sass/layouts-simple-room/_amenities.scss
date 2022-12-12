@@ -1,14 +1,15 @@
-.amenities{
+.amenities {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
+
     @include tablet {
-    padding-top: 48px;
-    padding-bottom: 48px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 }
 
-.vertical-line-left{
+.vertical-line-left {
     display: none;
     position: absolute;
     z-index: -1;
@@ -17,12 +18,13 @@
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
     height: 100%;
+
     @include desktop {
         display: block;
     }
 }
 
-.vertical-line-center{
+.vertical-line-center {
     display: none;
     position: absolute;
     z-index: -1;
@@ -31,13 +33,13 @@
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
     height: 100%;
-    
+
     @include desktop {
         display: block;
     }
 }
 
-.vertical-line-right{
+.vertical-line-right {
     display: none;
     position: absolute;
     z-index: -1;
@@ -46,7 +48,7 @@
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
     height: 100%;
-    
+
     @include desktop {
         display: block;
     }
@@ -57,9 +59,9 @@
 .amenities__title {
     font-family: $fontTimesNewRoman;
     font-weight: 400;
-    color:$textColorBlack;
+    color: $textColorBlack;
     font-size: 32px;
-    line-height:calc(37/32);
+    line-height: calc(37/32);
 }
 
 .amenities__title-text {
@@ -69,17 +71,18 @@
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
-    @include tablet{
+
+    @include tablet {
         display: block;
         max-width: 757px;
     }
 }
 
-.amenities__item{
-    margin-top: 32px;    
+.amenities__item {
+    margin-top: 32px;
 }
 
-.amenities__item-title{
+.amenities__item-title {
     font-family: $fontTimesNewRoman;
     font-weight: 700;
     font-size: 24px;
@@ -87,23 +90,24 @@
     color: $textColorBlack;
 }
 
-.amenities__block-text{
+.amenities__block-text {
     @include tablet {
-    display: flex;
-    gap: 80px;
+        display: flex;
+        gap: 80px;
     }
+
     @include desktop {
         display: flex;
         gap: 159px;
-    } 
+    }
 }
 
-.amenities__block-main{
+.amenities__block-main {
     @include tablet {
         display: flex;
         gap: 30px;
     }
-    
+
     @include desktop {
         display: flex;
         gap: 64px;
@@ -114,18 +118,19 @@
     @include tablet {
         width: 450px;
     }
+
     @include desktop {
         width: 495px;
     }
 }
 
-.amenities__block-small{
+.amenities__block-small {
     @include tablet {
         width: 450px;
     }
 }
 
-.amenities__block{
+.amenities__block {
     @include tablet {
         width: 100%;
         min-height: 43px;
@@ -136,7 +141,7 @@
 
 
 
-.amenities__item-text { 
+.amenities__item-text {
     font-weight: 700;
     margin-top: 16px;
     font-size: 16px;
@@ -144,34 +149,48 @@
     letter-spacing: 0.02em;
 }
 
-.button__amenities{
+.button__amenities {
     display: block;
     margin-top: 32px;
+
     @include tablet {
         margin-left: auto;
         margin-right: 0;
     }
+
     @include desktop {
         margin-left: 563px;
     }
 }
 
-.amenities__room__page{
-    display: block;
+.amenities__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-top: 20px;
     margin-left: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
-    color: $AccentColor;  
+    color: $AccentColor;
+
     @include tablet {
-        margin-left: 544px;
+        justify-content: flex-end;
+        margin-right: 0;
         margin-top: 32px;
+        gap: 16px;
+        font-size: 20px;
+        line-height: calc(24/20);
     }
+
     @include desktop {
         margin-left: 563px;
+        justify-content: flex-start;
     }
 }
 
+.icon__arrow {
+    fill: $AccentColor;
+}
 
