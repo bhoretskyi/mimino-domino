@@ -1,0 +1,50 @@
+.about-hotel-section {
+    margin-top: 70px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.about-hotel-text {
+    text-align: right;
+    font-family: $fontTimesNewRoman;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(23/20);
+    color: $preTitleColorGray;
+}
+
+.about-hotel-logo {
+    font-family: $fontFilm;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43/40);
+    letter-spacing: 0.3em;
+    color: $titleColorDarkGrey;
+    text-align: right;
+    margin-top: 6px;
+}
+
+.about-hotel-block-descript {
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 242px;
+}
+
+.about-hotel-text-descript {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
+    color: $textColorDarkGrey;
+}
