@@ -5,14 +5,26 @@
 .header-container{
     display: flex;
     background-color: transparent;
-    
+    margin-top: 16px;
 }
+
+@media  screen and (min-width: 1024px) {
+    .header-container{
+        margin-top: 24px;
+    }
+}
+
 .nav{
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 }
 
+@media screen and (min-width: 1280px) {
+    .nav{
+    margin-right: 60px;
+    }
+}
 
 .header-contacts{
     display: flex;
@@ -23,11 +35,12 @@
     gap: 20px;
 }
 .contacts-item{
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
 
 .logo{
     font-family: 'Film P3';
@@ -41,6 +54,19 @@ justify-content: center;
     margin-right: 50px;
 }
 
+@media screen and (min-width: 1024px) {
+    .logo{
+        margin-right: 90px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo{
+        margin-right: 95px;
+    }
+}
+
+
 .text-nav{
     font-family: 'Montserrat';
     font-style: normal;
@@ -50,30 +76,73 @@ justify-content: center;
     letter-spacing: 0.02em;
     color: #F3C653;
 }
-
-.is-hidden{
-    display: none;
-}
-.soc{
-    background-color: transparent;
-    @media screen and (max-width: 1279px) {
-        display: none;
+@media screen and (min-width: 1024px) {
+    .text-nav{
+        margin-right: 30px;
     }
-    display: block;
+    .margin{
+    margin-right: 70px;
+    }
+    .icon{
+        margin-right: 8px;
+    }
+    .decoration-list{
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-decoration: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    }
+    .contacts-number{
+    border: 1px solid #F3C653 ;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    }
 }
+
+
+@media screen and (max-width: 1023px){
+.phone-contact{
+    display: none;
+}
+}
+
+
+.phone-contact{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.soci{
+    background-color: transparent; 
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+        .soci{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }  
+    }
 
 .soc-list{
     display: flex;
     flex-direction: row;
     gap:20px;
-   
 }
 
 .icon{
-    fill:#F3C653;
+    fill:#F3C653;  
 }
 
 .svg-phone{
