@@ -6,3 +6,4 @@ $('.one-time').slick({
   slidesToShow: 2,
   adaptiveHeight: true
 });
+
