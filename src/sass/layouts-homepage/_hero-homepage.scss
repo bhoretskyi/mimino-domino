@@ -28,6 +28,9 @@
 }
 
 .hero-address {
+ 
+ margin-top: 64px;
+ margin-right: 15px;
   font-family: $fontMontserrat;
   font-style: normal;
   font-weight: 400;
@@ -73,6 +76,7 @@
   text-transform: uppercase;
   text-align: center;
   width: 303px;
+  margin-top: 70px;
 }
 
 .hero-pre_title {
@@ -188,6 +192,8 @@
     border-width: 100%;
     display: flex;
     margin-bottom: 70px;
+    margin-top: 0;
+    margin-right: 0;
   }
 
   .hero_list {
