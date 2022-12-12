@@ -13,16 +13,18 @@
                 Двомісний люкс
             </h3>
             <p class="form__room-stats">Категорія номеру</p>
-            <label for="nights" class="form__lable">
-                <select type="number" class="lable__input-count" min="1" value="1" id="nights" required>
-                    <option value="1">1</option>
-                </select>
-                <p class="lable__descript-par">Кількість ночей</p>
-            </label>
-            <lable for="nights" class="form__lable">
-                <input type="number" class="lable__input-price" id="nights" placeholder="1000" disabled>
-                <p class="lable__descript-par">грн</p>
-            </lable>
+            <div class="form__space">
+                <label for="nights" class="form__lable">
+                    <select type="number" class="lable__input-count" min="1" value="1" id="nights" required>
+                        <option value="1">1</option>
+                    </select>
+                    <p class="lable__descript-par">Кількість ночей</p>
+                </label>    
+                <lable for="nights" class="form__lable">
+                    <input type="number" class="lable__input-price" id="nights" placeholder="1000" disabled>
+                    <p class="lable__descript-par">грн</p>
+                </lable>    
+            </div>
             <button type="submit" class="form__booking-button">забронювати номер</button>
         </form>
     </div>

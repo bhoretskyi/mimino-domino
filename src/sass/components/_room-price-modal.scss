@@ -6,6 +6,12 @@
         max-width: 414px;
     }
 
+    @include tablet {
+        max-width: 712px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     border-radius: 2px;
     position: absolute;
     top: 50%;
@@ -42,6 +48,11 @@
     margin-top: 45px;
     margin-bottom: 40px;
     text-transform: uppercase;
+
+        @include tablet {
+                font-size: 40px;
+                line-height: 46px;
+            }
 }
 
 .form__room-name {
@@ -69,7 +80,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color:$textColorBrown;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .lable__descript-par {
@@ -82,12 +93,26 @@
     color: $textColorBrown;
     margin-bottom: 20px;
     margin-left: 15px;
+
+    @include tablet {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 40px;
+        }
+}
+
+.form__space {
+    @include tablet {
+    display: flex;
+        justify-content: space-between;
+    }
 }
 
 .lable__input-count,
 .lable__input-price {
     margin-bottom: 8px;
     outline: none;
+    height: 54px;
     width: 100%;
     background-color: transparent;
     border: 1px solid $textColorBrown;
@@ -108,6 +133,13 @@
     padding-right: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 1.16;
+            width: 288px;
+                height: 64px;
+        }
 }
 
 .lable__input-count {
@@ -130,7 +162,10 @@
     font-weight: 500;
     
     font-size: 20px;
-    // ПОМЕНЯТЬ-----------------------
+        @media screen and (min-width: 1024px) {
+                font-size: 24px;
+                line-height: 1.2;
+            }
 
     line-height: 1.2;
     text-align: center;
@@ -138,4 +173,12 @@
     cursor: pointer;
     text-transform: uppercase;
     margin-bottom: 45px;
+
+    transition: color $transition;
+    transition: background-color $transition;
+        &:hover,
+            &:focus {
+                color: $textColorBlack;
+                background-color: $AccentColor;
+            }
 }
