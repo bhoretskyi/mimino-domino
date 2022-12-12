@@ -139,9 +139,6 @@
 }
 
 .slider-item {
-  background: #dadada;
-  box-shadow: $SmallShadow;
-  border-radius: 2px;
   margin-right: 25px;
 
   @include tablet {
@@ -166,67 +163,37 @@
   @include desktop {
     width: 548px;
   }
-  &__img {
-    width: 100%;
+
+  .slick-prev,
+  .slick-next {
+    top: 120%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: '';
+  }
+  .slick-prev {
+    left: 75%;
+    background: url('https://api.iconify.design/cil/arrow-left.svg') 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    @include desktop {
+      left: 75%;
+    }
+  }
+  .slick-next {
+    background: url('https://api.iconify.design/cil/arrow-right.svg') 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    left: 95%;
   }
 }
 .slick-list {
   margin-right: -15px;
 }
-// .slick-prev:before {
-//   content: url('https://api.iconify.design/cil/arrow-left.svg');
-// }
+.about-restaurant_slick_foto {
+  width: 100%;
 
-// .slick-next:before {
-//   content: url('https://api.iconify.design/cil/arrow-right.svg');
-// }
-
-.slick-prev,
-.slick-next {
-  top: 120%;
+  background: #dadada;
+  border-radius: 2px;
 }
-.slick-prev:before,
-.slick-next:before {
-  content: '';
-}
-.slick-prev {
-  left: 75%;
-  background: url('https://api.iconify.design/cil/arrow-left.svg') 0 0 /100% no-repeat;
-  width: 32px;
-  height: 32px;
-  @include desktop {
-    left: 75%;
-  }
-}
-.slick-next {
-  background: url('https://api.iconify.design/cil/arrow-right.svg') 0 0 /100% no-repeat;
-  width: 32px;
-  height: 32px;
-  left: 95%;
-}
-
-.slick-next .slick-arrow {
-}
-.slick-prev:before {
-  // content: '';
-  // width: 32px;
-  // height: 32px;
-  // background-image: url(/src/images/svg/arrow-left.svg);
-  // color: $btnBlackColor;
-}
-// .slick-prev {
-//   width: 32px;
-//   height: 32px;
-//   background-color: brown;
-//   top: 275px;
-//   left: 218px;
-// }
-// .about-restaurant_slick .slick-arrow {
-//   position: absolute;
-//   top: 110%;
-//   font-size: 0;
-//   width: 32px;
-//   height: 32px;
-//   border: none;
-//   z-index: 10;
-// }
