@@ -5,10 +5,5 @@ $('.about-restaurant_slider').slick({
   slidesToShow: 2,
   adaptiveHeight: true,
   variableWidth: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {},
-    },
-  ],
+  arrows: true,
 });
