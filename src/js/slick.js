@@ -32,6 +32,7 @@ $('.right').on("click", function () {
   $('.lux-time').slick('slickNext');
 });
 
+
 $('.about-hotel-slick').slick({
   dots: false,
   infinite: true,
@@ -48,3 +49,4 @@ $('.details-hotel-slick').slick({
   centerMode: true,
   variableWidth: true
 });
+
