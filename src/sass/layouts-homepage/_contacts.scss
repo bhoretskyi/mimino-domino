@@ -234,7 +234,6 @@ img {
 
   @include tablet {
     margin-top: 0;
-    margin-left: 101px;
     height: max-content;
   }
 }
@@ -242,20 +241,22 @@ img {
 .container-contacts__wrap {
   @include tablet {
     display: flex;
+    justify-content: space-between;
   }
 }
 
-.container-line1 {
+.container-lines {
   content: '';
   position: absolute;
-  display: block;
-  width: 1px;
   height: 550px;
   top: 0;
-  left: 140px;
   border: 1px solid rgba(186, 186, 186, 0.4);
   filter: blur(0.5px);
   z-index: -1;
+}
+
+.container-line1 {
+  left: 140px;
 
   @include tablet {
     left: 278px;
@@ -265,17 +266,9 @@ img {
     left: 338px;
   }
 }
+
 .container-line2 {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 550px;
-  top: 0;
   left: 274px;
-  border: 1px solid rgba(186, 186, 186, 0.4);
-  filter: blur(0.5px);
-  z-index: -1;
 
   @include tablet {
     left: 512px;
@@ -294,8 +287,6 @@ img {
   top: 0;
 
   border: 1px solid rgba(186, 186, 186, 0);
-  filter: blur(0.5px);
-  z-index: -1;
 
   @include tablet {
     border: 1px solid rgba(186, 186, 186, 0.4);
