@@ -2,7 +2,7 @@
     padding: 32px 0;
     @include tablet {
         padding-top: 62px;
-        padding-bottom: 104px;
+        padding-bottom: 40px;
 
         background-image: linear-gradient(to right, transparent, transparent 25.9%,
                     rgba(186, 186, 186, 0.4) 25.9%, rgba(186, 186, 186, 0.4) 26%,
@@ -10,11 +10,9 @@
                     rgba(186, 186, 186, 0.4) 50.1%, transparent 50.1%, transparent 72.5%,
                     rgba(186, 186, 186, 0.4) 72.5%, rgba(186, 186, 186, 0.4) 72.6%,
                     transparent 72.6%, transparent);
-                    z-index: -1;
     }
     @include desktop {
         padding-top: 72px;
-        padding-bottom: 112px;
     }
 
     &__container {
@@ -144,59 +142,65 @@
     }
 }
 
-.one-time {
+.lux-time {
     width: 284px;
-    margin-bottom: 72px;
     @include tablet {
         width: 428px;
-        margin-bottom: 0;
     }
     @include desktop {
         width: 548px;
     }
 
-    &__wrap {
-        background: #DADADA;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-        margin-right: 16px;
-        @include tablet {
-            margin-right: 40px;
-        }
-        @include desktop {
-            width: 254px;
-        }
-    }
-
     &__img {
         width: 100%;
+        padding-right: 16px;
+        @include tablet {
+        padding-right: 40px;
+        }
     }
 }
 
-.slick-prev:before {
-    content: url('https://api.iconify.design/cil/arrow-left.svg');
-}
-
-.slick-next:before {
-    content: url('https://api.iconify.design/cil/arrow-right.svg');
-}
-
-.slick-prev,
-.slick-next {
-    top: 120%;
-}
-
-.slick-prev {
-    left: 0%;
+.lux-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
     @include tablet {
-        left: 85%;
+        gap: 32px;
+        margin-bottom: 0;
     }
+    @include desktop {
+        gap: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        @include tablet {
+            justify-content: flex-end;
+        }
+    }
+
+.lux-slider__left, .lux-slider__right {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: fill $transition;
 }
 
-.slick-next {
-    left: 46px;
-    @include tablet {
-        left: 95%;
-    }
+.lux-slider__left:hover > .icon-left{
+    fill: $AccentColor;
+}
+.lux-slider__right:hover >.icon-right {
+    fill: $AccentColor;
 }
 
+.icon-right,
+.icon-left {
+        fill: $btnBlackColor;
+        width: 32px;
+        height: 32px;
+}
+
+}
