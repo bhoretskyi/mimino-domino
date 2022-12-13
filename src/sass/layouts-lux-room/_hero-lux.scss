@@ -1,6 +1,6 @@
 
 .overlay{
-    max-width: 1280px;
+    max-width: 1600px;
  height: 740px;
     background-image:
         url(/src/images/main/slider-main/datails-hotel/sl-main-hotel-5-mob.jpg);
@@ -20,7 +20,7 @@
     
 .hero-container_room {
     max-width: 415px;
-display: flex;
+    display: flex;
     flex-direction: column;
     padding-bottom: 22px;
 }
@@ -220,7 +220,6 @@ display: flex;
 
 @media screen and(min-width:1280px) {
     .overlay {
-        
         max-width: 1280px;
         background-image:
             url(/src/images/joint-images/hotel-hero-desk.jpg);
@@ -236,7 +235,7 @@ display: flex;
     }
 
 .hero-container_room {
-    max-width: 1280px;
+  max-width: 1280px;
     padding-right: 85px;
         padding-left: 85px;
         padding-top: 64px;
