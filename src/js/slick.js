@@ -40,3 +40,13 @@ $('.about-hotel-slick').slick({
 });
 
 
+$(document).ready(function () {
+  $('.show').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});

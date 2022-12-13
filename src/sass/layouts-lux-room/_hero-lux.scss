@@ -132,7 +132,7 @@
     }
 
 .hero-container_room {
-    max-width: 1024px;
+    min-width: 1024px;
     justify-content: flex-end;
         padding-right: 47px;
             padding-left: 47px;
@@ -219,8 +219,16 @@
 }
 
 @media screen and(min-width:1280px) {
-    .overlay {
+.hero-container_room {
         max-width: 1280px;
+        padding-right: 85px;
+        padding-left: 85px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .overlay {
+        min-width: 1280px;
         background-image:
             url(/src/images/joint-images/hotel-hero-desk.jpg);
     }
@@ -234,13 +242,7 @@
         }
     }
 
-.hero-container_room {
-  max-width: 1280px;
-    padding-right: 85px;
-        padding-left: 85px;
-        padding-top: 64px;
-        padding-bottom: 64px;
-}
+
 
     .hero-soc_room {
         visibility: hidden;
@@ -270,3 +272,82 @@
         visibility: hidden;
     }
 }
+
+.hero-slider-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    
+}
+
+  .hero-slider {
+    //   position: relative;
+
+      & .slick-track {
+          display: flex;
+      }
+
+      & .slick-list {
+          overflow: hidden;
+      }
+
+      & .slick-slide {
+          height: 571px;
+
+          @media screen and (min-width: 360px) {
+              height: 646px;
+          }
+
+          @media screen and (min-width: 414px) {
+              height: 720px;
+          }
+      }
+
+    //   & .slick-arrow {
+    //       position: absolute;
+    //       top: 50%;
+    //       transform: translateY(-50%);
+    //       z-index: 10;
+
+    //       cursor: pointer;
+
+    //       width: 40px;
+    //       height: 40px;
+    //       border: none;
+    //       font-size: 0;
+    //       background-color: rgba(0, 0, 0, 0.65);
+
+    //       &.slick-prev {
+    //           left: 15px;
+
+    //           @media screen and (min-width: 1024px) {
+    //               left: 47px;
+    //           }
+
+    //           @media screen and (min-width: 1280px) {
+    //               left: 85px;
+    //           }
+
+    //           background-image: url('/src/images/svg/arrow-left.svg');
+    //           background-position: center;
+    //           background-repeat: no-repeat;
+    //           background-size: cover;
+    //       }
+
+    //       &.slick-next {
+    //           right: 15px;
+
+    //           @media screen and (min-width: 1024px) {
+    //               right: 47px;
+    //           }
+
+    //           @media screen and (min-width: 1280px) {
+    //               right: 85px;
+    //           }
+
+    //           background-image: url('/src/images/svg/arrow-right.svg');
+    //           background-position: center;
+    //           background-repeat: no-repeat;
+    //           background-size: cover;
+    //       }
+    //   }
+          }
