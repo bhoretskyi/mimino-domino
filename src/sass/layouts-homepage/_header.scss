@@ -1,18 +1,28 @@
 .top{
     position: absolute;
     width: 100%;
+    z-index: 999;
 }
+
 .header-container{
     display: flex;
     background-color: transparent;
+    margin-top: 16px;
     
+    @include tablet{
+        margin-top: 24px;
+    }
 }
+
 .nav{
     display: flex;
     align-items: center;
-  justify-content: center;
-}
+    justify-content: center;
 
+    @include desktop{
+        margin-right: 60px;
+        }
+}
 
 .header-contacts{
     display: flex;
@@ -21,12 +31,16 @@
 .contacts-list{
     display: flex;
     gap: 20px;
-}
-.contacts-item{
-display: flex;
-align-items: center;
-justify-content: center;
 
+    @include tablet{
+        gap: 70px;
+    }
+}
+
+.contacts-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -36,9 +50,17 @@ justify-content: center;
     font-size: 36px;
     line-height: 1.08;
     letter-spacing: 0.3em;
-    color: #FFFFFF;
+    color: $titleColorWhite;
     text-decoration: none;
     margin-right: 50px;
+
+    @include tablet{
+        margin-right: 90px;
+    }
+
+    @include desktop{
+        margin-right: 95px;
+    }
 }
 
 .text-nav{
@@ -48,32 +70,79 @@ justify-content: center;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #F3C653;
-}
+    color:$AccentColor;
+    margin-right: 6px;
 
-.is-hidden{
-    display: none;
-}
-.soc{
-    background-color: transparent;
-    @media screen and (max-width: 1279px) {
-        display: none;
+    @include tablet {
+        margin-right: 30px;
     }
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.soc-list{
+
+
+.contacts-number{   
     display: flex;
     flex-direction: row;
-    gap:20px;
-   
+    
+    @include tablet{
+        border: 1px solid $AccentColor ;
+        border-radius: 2px;
+        height: 40px;
+    }
+}
+
+.decoration-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    @include tablet{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+.phone-contact{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $titleColorWhite;
+    width: 100%;
+    display: none;
+
+    @include tablet{
+        display: block;
+    }
+}
+
+.soci{
+    background-color: transparent; 
+    display: none;
+
+    @include desktop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.soci-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .icon{
-    fill:#F3C653;
+    fill:$AccentColor;  
+
+    @include tablet{
+         margin-right: 8px;
+    }
 }
 
 .svg-phone{

@@ -6,32 +6,49 @@
         max-width: 414px;
     }
 
+    @include tablet {
+        max-width: 712px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     border-radius: 2px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background-color: $backGroundBeige;
 }
 
-.modal__close-button {
+.modal__close-button--price {
     position: absolute;
     width: 24px;
     height: 24px;
     display: flex;
-    right: 4;
-    top: 3;
+    right: 16;
+    top: 16;
     padding: 0;
+    right: 16;
+    top: 16;
     cursor: pointer;
+    fill: $btnBlackColor;
     border: none;
     background-color: transparent;
+    align-items: center;
+    justify-content: center;
 }
 
-.form__heading {
+.button-cross-svg--price {
+    fill: $btnBlackColor;
+    position: absolute;
+
+}
+
+.form__heading--price {
     font-family: $fontTimesNewRoman;
     font-style: normal;
     font-weight: 700;
-    
+
     font-size: 24px;
     // ПОМЕНЯТЬ-----------------------
 
@@ -42,37 +59,42 @@
     margin-top: 45px;
     margin-bottom: 40px;
     text-transform: uppercase;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 46px;
+    }
 }
 
-.form__room-name {
-    font-family:$fontTimesNewRoman;
+.form__room-name--price {
+    font-family: $fontTimesNewRoman;
     font-style: normal;
-    font-weight: 700;  
+    font-weight: 700;
 
     font-size: 24px;
     // ПОМЕНЯТЬ-----------------------
-    
+
     line-height: 1.16;
     letter-spacing: 0.05em;
 
-    color: #808080; 
+    color: #808080;
     // ПОМЕНЯТЬ-----------------------
-    
+
     margin-bottom: 28px;
 }
 
-.form__room-stats {
+.form__room-stats--price {
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 500;
     font-size: $baseFontSize;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color:$textColorBrown;
-    margin-bottom: 24px;
+    color: $textColorBrown;
+    margin-bottom: 20px;
 }
 
-.lable__descript-par {
+.lable__descript-par--price {
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 500;
@@ -82,12 +104,26 @@
     color: $textColorBrown;
     margin-bottom: 20px;
     margin-left: 15px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
 }
 
-.lable__input-count,
-.lable__input-price {
+.form__space--price {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.lable__input-count--price,
+.lable__input-price--price {
     margin-bottom: 8px;
     outline: none;
+    height: 54px;
     width: 100%;
     background-color: transparent;
     border: 1px solid $textColorBrown;
@@ -100,7 +136,7 @@
 
     line-height: 1.16;
     letter-spacing: 0.05em;
-    
+
     color: #808080;
     // ПОМЕНЯТЬ-----------------------
 
@@ -108,15 +144,22 @@
     padding-right: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 1.16;
+        width: 288px;
+        height: 64px;
+    }
 }
 
-.lable__input-count {
+.lable__input-count--price {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.form__booking-button {
+.form__booking-button--price {
     background: $btnBlackColor;
     border: 1px solid $AccentColor;
     border-radius: 2px;
@@ -128,9 +171,13 @@
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 500;
-    
+
     font-size: 20px;
-    // ПОМЕНЯТЬ-----------------------
+
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.2;
+    }
 
     line-height: 1.2;
     text-align: center;
@@ -138,4 +185,13 @@
     cursor: pointer;
     text-transform: uppercase;
     margin-bottom: 45px;
+
+    transition: color $transition;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+        color: $textColorBlack;
+        background-color: $AccentColor;
+    }
 }
