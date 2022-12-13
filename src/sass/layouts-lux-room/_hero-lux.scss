@@ -1,6 +1,6 @@
 
 .overlay{
-    max-width: 415px;
+    max-width: 1280px;
  height: 740px;
     background-image:
         url(/src/images/main/slider-main/datails-hotel/sl-main-hotel-5-mob.jpg);
@@ -19,6 +19,7 @@
 }
     
 .hero-container_room {
+    max-width: 415px;
 display: flex;
     flex-direction: column;
     padding-bottom: 22px;
@@ -109,7 +110,6 @@ display: flex;
 
 @media screen and (min-width: 1024px) {
     .overlay {
-        max-width: 1024px;
         height: 720px;
         justify-content: flex-end;
            
@@ -132,6 +132,7 @@ display: flex;
     }
 
 .hero-container_room {
+    max-width: 1024px;
     justify-content: flex-end;
         padding-right: 47px;
             padding-left: 47px;
@@ -235,6 +236,7 @@ display: flex;
     }
 
 .hero-container_room {
+    max-width: 1280px;
     padding-right: 85px;
         padding-left: 85px;
         padding-top: 64px;
@@ -248,6 +250,7 @@ display: flex;
     .hero-button_room {
         background: $btnGreyColor;
         margin-bottom: 0;
+        left: 35%;
     }
 
     .hero-room_title {

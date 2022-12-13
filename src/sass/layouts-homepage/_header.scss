@@ -1,15 +1,15 @@
 .top{
     position: absolute;
     width: 100%;
+    z-index: 999;
 }
+
 .header-container{
     display: flex;
     background-color: transparent;
     margin-top: 16px;
-}
-
-@media  screen and (min-width: 1024px) {
-    .header-container{
+    
+    @include tablet{
         margin-top: 24px;
     }
 }
@@ -18,12 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-@media screen and (min-width: 1280px) {
-    .nav{
-    margin-right: 60px;
-    }
+    @include desktop{
+        margin-right: 60px;
+        }
 }
 
 .header-contacts{
@@ -33,14 +31,17 @@
 .contacts-list{
     display: flex;
     gap: 20px;
+
+    @include tablet{
+        gap: 70px;
+    }
 }
+
 .contacts-item{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 
 .logo{
     font-family: 'Film P3';
@@ -49,23 +50,18 @@
     font-size: 36px;
     line-height: 1.08;
     letter-spacing: 0.3em;
-    color: #FFFFFF;
+    color: $titleColorWhite;
     text-decoration: none;
     margin-right: 50px;
-}
 
-@media screen and (min-width: 1024px) {
-    .logo{
+    @include tablet{
         margin-right: 90px;
     }
-}
 
-@media screen and (min-width: 1280px) {
-    .logo{
+    @include desktop{
         margin-right: 95px;
     }
 }
-
 
 .text-nav{
     font-family: 'Montserrat';
@@ -74,42 +70,38 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #F3C653;
-}
-@media screen and (min-width: 1024px) {
-    .text-nav{
+    color:$AccentColor;
+    margin-right: 6px;
+
+    @include tablet {
         margin-right: 30px;
     }
-    .margin{
-    margin-right: 70px;
+}
+
+
+
+.contacts-number{   
+    display: flex;
+    flex-direction: row;
+    
+    @include tablet{
+        border: 1px solid $AccentColor ;
+        border-radius: 2px;
+        height: 40px;
     }
-    .icon{
-        margin-right: 8px;
-    }
-    .decoration-list{
+}
+
+.decoration-list{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin-right: 8px;
-    margin-left: 8px;
-    }
-    .contacts-number{
-    border: 1px solid #F3C653 ;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: row;
-    height: 40px;
+
+    @include tablet{
+        margin-right: 8px;
+        margin-left: 8px;
     }
 }
-
-
-@media screen and (max-width: 1023px){
-.phone-contact{
-    display: none;
-}
-}
-
 
 .phone-contact{
     font-family: 'Montserrat';
@@ -119,30 +111,38 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #FFFFFF;
+    color: $titleColorWhite;
+    width: 100%;
+    display: none;
+
+    @include tablet{
+        display: block;
+    }
 }
 
 .soci{
     background-color: transparent; 
     display: none;
-}
 
-@media screen and (min-width: 1280px) {
-        .soci{
+    @include desktop{
         display: flex;
         align-items: center;
         justify-content: center;
-        }  
     }
+}
 
-.soc-list{
+.soci-list{
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
 }
 
 .icon{
-    fill:#F3C653;  
+    fill:$AccentColor;  
+
+    @include tablet{
+         margin-right: 8px;
+    }
 }
 
 .svg-phone{

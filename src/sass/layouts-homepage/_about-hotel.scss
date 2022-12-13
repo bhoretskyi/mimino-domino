@@ -1,7 +1,7 @@
 .about-hotel-section {
     margin-top: 18px;
     position: relative;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
 
     @include tablet {
         padding-top: 120px;
@@ -168,8 +168,35 @@
     
 
 }
-.testovy {
-    width: 100px;
-    height: 100px;
-    background-color: orangered;
+
+.about-hotel-slick{
+    position: relative;
+    margin-top: 116px;
+    max-width: 525px;
+    background-color: none;
+    
 }
+
+    .slick-prev:before,
+    .slick-next:before {
+        content: '';
+    }
+    
+    .slick-prev {
+        left: 80;
+        background: url(/src/images/svg/icons.svg#icon-arrow-right) 0 0 /100% no-repeat;
+        width: 32px;
+        height: 32px;
+    
+        @include desktop {
+            left: 80%;
+        }
+    }
+    
+    .slick-next {
+        background: url(/src/images/svg/icons.svg#icon-arrow-left) 0 0 /100% no-repeat;
+        width: 32px;
+        height: 32px;
+        left: 95%;
+        }
+

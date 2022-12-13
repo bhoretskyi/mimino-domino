@@ -1,29 +1,33 @@
-<div class="backdrop visually-hidden" data-price-room>
+<div class="backdrop visually-hidden">
     <div class="modal-price">
-        <button type="button" class="modal__close-button">
-            <svg class="button-cross-svg" width="18" height="18">
-                <use href="#"></use>
+        <button type="button" class="modal__close-button--price">
+            <svg class="button-cross-svg--price" width="24" height="24">
+                <use href="/src/images/svg/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <form class="modal-form">
-            <h2 class="form__heading">
+        <form class="modal-form--price">
+            <h2 class="form__heading--price">
                 ціни на номер
             </h2>
-            <h3 class="form__room-name">
+            <h3 class="form__room-name--price">
                 Двомісний люкс
             </h3>
-            <p class="form__room-stats">Категорія номеру</p>
-            <label for="nights" class="form__lable">
-                <select type="number" class="lable__input-count" min="1" value="1" id="nights" required>
-                    <option value="1">1</option>
-                </select>
-                <p class="lable__descript-par">Кількість ночей</p>
-            </label>
-            <lable for="nights" class="form__lable">
-                <input type="number" class="lable__input-price" id="nights" placeholder="1000" disabled>
-                <p class="lable__descript-par">грн</p>
-            </lable>
-            <button type="submit" class="form__booking-button">забронювати номер</button>
+            <p class="form__room-stats--price">Категорія номеру</p>
+            <div class="form__space--price">
+                <label for="nights" class="form__lable--price">
+                    <select type="number" class="lable__input-count--price" min="1" value="1" id="nights" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <p class="lable__descript-par--price">Кількість ночей</p>
+                </label>    
+                <lable for="nights" class="form__lable--price">
+                    <input type="number" class="lable__input-price--price" id="nights" placeholder="1000" disabled>
+                    <p class="lable__descript-par--price">грн</p>
+                </lable>    
+            </div>
+            <button type="submit" class="form__booking-button--price">забронювати номер</button>
         </form>
     </div>
     <!-- </output>
