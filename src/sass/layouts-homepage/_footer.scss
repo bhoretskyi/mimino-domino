@@ -1,16 +1,9 @@
 .footer{
   background-color: #0E0C07;
-  max-width: 414px;
-  width: 100%;
-  min-width: 320px;
+  max-width: 1600px;
   margin: auto;
   @include tablet{
     justify-content: center;
-    max-width: 1024px;
-  }
-  @include desktop{
-    justify-content: center;
-    max-width: 1280px;
   }
 }
 
@@ -102,6 +95,11 @@ line-height: 1.07;
 letter-spacing: 0.3em;
 
 color: #F3C653;
+
+@media screen and (max-width: 350px) {
+  margin-right: auto;
+  
+}
 @include tablet{
   padding-left: 0px;
 font-size: 64px;
@@ -136,13 +134,12 @@ margin-right: 163px;
   display: flex;
   @media screen and (min-width: 1024px){
       flex-direction: column-reverse;
-    display: inline-flex;
+      display: inline-flex;
       
   }
 }
-.footer-soc-list__item:not(:last-child){
+.footer-soc-list__item:not(:first-child){
   @media screen and (min-width: 1024px){
-     
       margin-bottom: 12px; 
   }
 
