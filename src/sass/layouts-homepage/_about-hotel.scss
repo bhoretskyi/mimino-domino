@@ -1,3 +1,50 @@
+.vertical-line-left-hotel {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 253px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    height: 150%;
+
+    @include desktop {
+        display: block;
+        left: 253px;
+    }
+}
+
+.vertical-line-center-hotel {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 555px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    height: 150%;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+.vertical-line-right-hotel {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 857px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+    height: 150%;
+
+    @include desktop {
+        display: block;
+    }
+
+}
+
 .about-hotel-section {
     margin-top: 18px;
     position: relative;
@@ -172,31 +219,66 @@
 .about-hotel-slick{
     position: relative;
     margin-top: 116px;
-    max-width: 525px;
+    width: 525px;
+    height: 245px;
     background-color: none;
     
 }
 
-    .slick-prev:before,
-    .slick-next:before {
-        content: '';
-    }
-    
-    .slick-prev {
-        left: 80;
-        background: url(/src/images/svg/icons.svg#icon-arrow-right) 0 0 /100% no-repeat;
-        width: 32px;
-        height: 32px;
-    
-        @include desktop {
-            left: 80%;
-        }
-    }
-    
-    .slick-next {
-        background: url(/src/images/svg/icons.svg#icon-arrow-left) 0 0 /100% no-repeat;
-        width: 32px;
-        height: 32px;
-        left: 95%;
-        }
+.slick-prev:before,
+.slick-next:before {
+    content:'';
+    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    fill: aqua;
+}
 
+.slick-prev {
+    left: 190%;
+    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    left: 0;
+    top: 285px;
+    @include desktop {
+        /*left:0;
+        top: 285px;*/
+    }
+}
+
+.slick-next {
+    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+   /* left: 120%;
+    top: 120%;*/
+    left: 66px;
+    top: 285px;
+    @include desktop {
+        left: 66px;
+        top: 285px;
+    }
+}
+
+
+.slick-next:hover,
+.slick-next:focus {
+    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    
+}
+
+.slick-prev:hover,
+.slick-prev:focus{
+   /* left: 190%;*/
+        background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+        width: 32px;
+        height: 32px;
+}
+
+.slick-img-hotel{
+    width: 245px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
