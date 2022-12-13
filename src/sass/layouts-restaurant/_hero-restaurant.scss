@@ -1,6 +1,6 @@
 .hero-restaurant {
-    width: 1600px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1600px;
     padding-top: 150px;
     padding-bottom: 20px;
     padding-left: 15px;
@@ -32,7 +32,7 @@
 
 
     @include tablet{
-        max-width: 100%;
+        width: 100%;
         padding-top: 175px;
         background-image: linear-gradient(
         to right,
@@ -55,7 +55,7 @@
 
 } 
 @include desktop {
-    max-width: 100%;
+    width: 100%;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -245,8 +245,6 @@ margin-bottom: 0;
 
   }
   
-
-
-
-
-
+  .hero-soc-list__icon {
+    fill:#F3C653;
+  }
