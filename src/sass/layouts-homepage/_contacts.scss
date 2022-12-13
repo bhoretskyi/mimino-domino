@@ -131,6 +131,18 @@ img {
   }
 }
 
+.connect__icon {
+  fill: $textColorBrown;
+  margin-right: 8px;
+  flex-shrink: 0;
+  transition: $transition;
+}
+
+.contacts-address__link:hover .connect__icon,
+.contacts-address__link:focus .connect__icon {
+  fill: $AccentColor;
+}
+
 .contacts-address__link--position {
   margin-right: 8px;
 
@@ -151,6 +163,11 @@ img {
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: $titleColorDarkGrey;
+}
+
+.map__link:hover .connect__icon,
+.map__link:focus .connect__icon {
+  fill: $AccentColor;
 }
 
 .phone__wrap {
@@ -209,12 +226,6 @@ img {
   }
 }
 
-.connect__icon {
-  fill: $textColorBrown;
-  margin-right: 8px;
-  flex-shrink: 0;
-}
-
 .contacts__map {
   margin-top: 32px;
   border: 1px solid #bababa;
@@ -268,6 +279,13 @@ img {
   }
 }
 .container-line3 {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 550px;
+  top: 0;
+
   border: 1px solid rgba(186, 186, 186, 0);
 
   @include tablet {
