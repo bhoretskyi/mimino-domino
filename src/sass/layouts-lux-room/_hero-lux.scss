@@ -1,5 +1,5 @@
 
-.overlay{
+.lux-room-overlay{
     max-width: 1600px;
  height: 740px;
     background-image:
@@ -109,7 +109,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .overlay {
+    .lux-room-overlay {
         height: 720px;
         justify-content: flex-end;
            
@@ -125,7 +125,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .overlay{
+        .lux-room-overlay{
             background-image:
                 url(/src/images/joint-images/hotel-hero-tab-2x.jpg);
         }
@@ -227,7 +227,7 @@
         padding-bottom: 64px;
     }
 
-    .overlay {
+    .lux-room-overlay {
         min-width: 1280px;
         background-image:
             url(/src/images/joint-images/hotel-hero-desk.jpg);
@@ -236,7 +236,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .overlay {
+        .lux-room-overlay {
             background-image:
                 url(/src/images/joint-images/hotel-hero-desk-2x.jpg);
         }
