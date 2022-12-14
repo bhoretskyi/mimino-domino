@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
-      overlay      = document.querySelector('#overlay-modal'),
+      overlay      = document.querySelector('.js-overlay-modal'),
       closeButtons = document.querySelector('.js-modal-close');
   
   /* открытие окон. */
