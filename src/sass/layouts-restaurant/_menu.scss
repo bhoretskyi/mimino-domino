@@ -1,6 +1,6 @@
-// td {
-//   outline: 1px solid black;
-// }
+td {
+  outline: 1px solid black;
+}
 
 .menu__flex-wrapper {
   @include tablet {
@@ -19,17 +19,25 @@
 }
 
 .section-restaurant__menu {
-  position: relative;
   padding: 32px 15px;
   background-color: #f0ecd6;
 
   @include tablet {
-    padding: 58px 47px 40px 47px;
+    padding-top: 58px;
+    padding-bottom: 40px;
   }
 
   @include desktop {
-    padding: 58px 85px 60px 85px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 58px;
+    padding-bottom: 60px;
   }
+}
+
+.section-restaurant__menu .container {
+  position: relative;
 }
 
 .menu__table {
@@ -90,11 +98,11 @@
   color: $textColorBlack;
 
   @include tablet {
-    width: 258px;
+    width: 293px;
   }
 
   @include desktop {
-    width: 265px;
+    width: 413px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -129,11 +137,11 @@
   color: $textColorBlack;
 
   @include tablet {
-    width: 70px;
+    width: 80px;
   }
 
   @include desktop {
-    width: 75px;
+    width: 95px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -167,7 +175,7 @@
     content: '';
     width: 616px;
     position: absolute;
-    top: 0;
+    top: -58px;
     left: 759px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
@@ -185,7 +193,7 @@
     content: '';
     width: 616px;
     position: absolute;
-    top: 0;
+    top: -58px;
     left: 640px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
@@ -199,7 +207,7 @@
     content: '';
     width: 616px;
     position: absolute;
-    top: 0;
+    top: -58px;
     left: 338px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
