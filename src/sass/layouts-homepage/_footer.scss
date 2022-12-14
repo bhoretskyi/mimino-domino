@@ -1,21 +1,25 @@
 .footer{
-  background-color: #0E0C07;
   max-width: 1280px;
-  margin: auto;
+    background-color: #0e0c07;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    position: relative;
   @include tablet{
     position: relative;
   }
 }
 
 .footer-container{
-  max-width: 1280px;
   width: 100%;
   align-items: center;
-  margin: 0;
+  margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-}
+  display: flex;
+  @media screen and (max-width: 414px){
+    min-width: 320px;
+}}
 
     
 
@@ -99,6 +103,10 @@ justify-content: center;
   height: 0%;
   transform: rotate(90deg);
   transform-origin: top left;
+
+  @media screen and(max-width: 413px) {
+    display: none;
+  }
 
   @include tablet{
     content:'';
