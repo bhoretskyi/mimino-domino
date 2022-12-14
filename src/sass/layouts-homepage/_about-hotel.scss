@@ -2,13 +2,15 @@
     
     z-index: -1;
     filter: blur(.5px);
-    height: 150%;
+    height: 100%;
     border: 1px solid #bababa66;
     display: block;
     position: absolute;
     top: 0;
-    left: 140px;
-        
+    left: 125px;
+    @include tablet {
+        left: 231px;
+    }
 
     @include desktop {
         display: block;
@@ -24,10 +26,16 @@
     left: 555px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
-    height: 150%;
+    height: 100%;
+    
 
+    @include tablet {
+        display: block;
+        left: 465px;
+    }
     @include desktop {
         display: block;
+        left: 555px;
     }
 }
 
@@ -36,14 +44,19 @@
     position: absolute;
     z-index: -5;
     top: 0;
-    left: 274px;
+    left: 259px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
-    height: 150%;
+    height: 100%;
+    
+    @include tablet {
+       
+        left: 698px;
+    }
 
     @include desktop {
         display: block;
-        left: 857px;
+        left: 856px;
     }
 
 }
