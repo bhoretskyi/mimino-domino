@@ -1,3 +1,4 @@
+
  $('.about-restaurant_slider').slick({
   dots: false,
   infinite: true,
@@ -30,4 +31,36 @@ $('.left').on("click", function () {
 $('.right').on("click", function () {
   $('.lux-time').slick('slickNext');
 });
+
+
+$('.about-hotel-slick').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+});
+
+
+
+$(document).ready(function () {
+  $('.show').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+
+$('.details-hotel-slick').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true
+});
+
 
