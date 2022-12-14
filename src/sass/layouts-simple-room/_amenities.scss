@@ -188,15 +188,16 @@
         margin-left: 563px;
         justify-content: flex-start;
     }
+        &:hover,
+        &:focus {
+        color: #f3c653;
+        fill: #f3c653;
+        cursor: pointer;
+        }
 }
 
 .icon__arrow {
     fill: $textColorBrown;
 }
 
-.amenities__link:hover,
-.amenities__link:focus {
-    color: #f3c653;
-    fill: #f3c653;
-    cursor: pointer;
-}
+
