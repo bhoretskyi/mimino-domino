@@ -287,71 +287,78 @@
             width: 548px;
             margin-left: 0px;
         }
+
+                .slick-prev:before,
+                .slick-next:before {
+                    content: '';
+                    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+                    width: 32px;
+                    height: 32px;
+                }
+        
+                .slick-prev {
+        
+                    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+                    width: 32px;
+                    height: 32px;
+                    top: 185px;
+                    left: 75px;
+                    
+                    @include mobile {
+                        margin-left: 15px;
+                    }
+
+                    @include tablet {
+                        top: 225px;
+                        left: 0px;
+                    }
+        
+                    @include desktop {
+                        top: 285px;
+                        left: 0px;
+        
+                    }
+                }
+        
+                .slick-next {
+                    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
+                    width: 32px;
+                    height: 32px;
+                    top: 185px;
+                    left: 135px;
+                        
+                    @include tablet {
+                        top: 225px;
+                        left: 64px;
+                    }
+        
+                    @include desktop {
+                        left: 66px;
+                        top: 285px;
+                    }
+                }
+        
+        
+                .slick-next:hover,
+                .slick-next:focus {
+                    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
+                    width: 32px;
+                    height: 32px;
+        
+                }
+        
+                .slick-prev:hover,
+                .slick-prev:focus {
+        
+                    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
+                    width: 32px;
+                    height: 32px;
+                }
 }
 
 
 
-.slick-prev:before,
-.slick-next:before {
-    content:'';
-    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
-    width: 32px;
-    height: 32px;
-}
 
-.slick-prev {
-   
-    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
-    width: 32px;
-    height: 32px;
-    top: 185px;
-    left: 107px;
-    
-    @include tablet {
-            top: 225px;
-            left: 0px;
-    }
-    
-    @include desktop {
-            top: 285px;
-            left: 0px;
-            
-    }
-}
-
-.slick-next {
-    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
-    width: 32px;
-    height: 32px;
-    top: 185px;
-    left: 165px;
-    @include tablet {
-        top: 225px;
-        left: 64px;
-    }
-
-    @include desktop {
-        left: 66px;
-        top: 285px;
-    }
-}
-
-
-.slick-next:hover,
-.slick-next:focus {
-    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
-    width: 32px;
-    height: 32px;
-    
-}
-
-.slick-prev:hover,
-.slick-prev:focus{
-   
-        background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
-        width: 32px;
-        height: 32px;
-}
 
 .slick-img-hotel{
     width: 245px;
