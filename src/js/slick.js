@@ -55,12 +55,20 @@ $(document).ready(function () {
 });
 
 $('.details-hotel-slick').slick({
-  dots: false,
+  arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
-  centerMode: true,
-  variableWidth: true
+  slidesToScroll: 4,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
 });
 
 
