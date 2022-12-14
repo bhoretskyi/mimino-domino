@@ -5,42 +5,58 @@
 }
 
 .header-container{
-    display: flex;
-    background-color: transparent;
     margin-top: 16px;
     
     @include tablet{
         margin-top: 24px;
     }
+    @include desktop{
+        display: flex;
+    }
 }
 
 .nav{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
+    // justify-content: space-between;
 
     @include desktop{
         margin-right: 60px;
         }
 }
-
+.header-index{
+    display: block;
+}
 .header-contacts{
     display: flex;
-    background-color: transparent;
+    justify-content: space-between;
 }
+
 .contacts-list{
     display: flex;
-    gap: 20px;
-
+    margin: 0;
+    
+    @include mobile{
+        gap: 20px;
+    }
+    
     @include tablet{
         gap: 70px;
     }
 }
 
+// @media screen and (max-width: 413px){
+//     .contacts-list{
+//         justify-content: space-between;
+//     }
+// }
+    
 .contacts-item{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .logo{
@@ -52,14 +68,27 @@
     letter-spacing: 0.3em;
     color: $titleColorWhite;
     text-decoration: none;
-    margin-right: 50px;
+    text-transform: uppercase;
+    
+    @include mobile{
+        margin-right: 50px;
+    }
 
     @include tablet{
         margin-right: 90px;
+        font-size: 40px;
+        line-height: 1.075;
+        
     }
 
     @include desktop{
         margin-right: 95px;
+    }
+}
+
+@media screen and (max-width: 413px){
+    .logo{
+        justify-content: space-between;
     }
 }
 
@@ -71,23 +100,33 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color:$AccentColor;
-    margin-right: 6px;
 
+    @include mobile{
+        margin-right: 5px;
+        
+    }
+    
     @include tablet {
         margin-right: 30px;
+        font-size: 20px;
+        line-height: 1.2;
     }
 }
 
-
+@media screen and (max-width:413px) {
+    .text-nav{
+        justify-content: space-between;
+    }
+}
 
 .contacts-number{   
     display: flex;
-    flex-direction: row;
     
     @include tablet{
         border: 1px solid $AccentColor ;
         border-radius: 2px;
         height: 40px;
+        
     }
 }
 
@@ -97,11 +136,13 @@
     justify-content: center;
     text-decoration: none;
 
+
     @include tablet{
-        margin-right: 8px;
-        margin-left: 8px;
+
     }
 }
+
+
 
 .phone-contact{
     font-family: 'Montserrat';
@@ -112,16 +153,21 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: $titleColorWhite;
-    width: 100%;
     display: none;
+    margin-right: 8px;
+    margin-left: 8px;
+   
+    
 
     @include tablet{
         display: block;
+        // margin-right: 8px;
+        // margin-left: 8px;
+        // width: 100px;
     }
 }
 
-.soci{
-    background-color: transparent; 
+.soci{ 
     display: none;
 
     @include desktop{
@@ -132,16 +178,20 @@
 }
 
 .soci-list{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    display: none;
+
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
 .icon{
     fill:$AccentColor;  
 
     @include tablet{
-         margin-right: 8px;
+        margin-left: 8px;
     }
 }
 
@@ -149,4 +199,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+     @include tablet{
+        //  margin-left: 8px;
+    }
 }
