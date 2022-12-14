@@ -1,29 +1,32 @@
-.hero-overlay {
-   
+.room_section {
     margin: 0 auto;
-        position: relative;
-    
-        @media screen and (min-width: 414px) {
-            max-width: 414px;
-        }
-    
-        @media screen and (min-width: 1024px) {
-            max-width: 1024px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            max-width: 1280px;
-        }
+    position: relative;
+
+    @media screen and (min-width: 414px) {
+        max-width: 414px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1600px;
+    }
 }
 
 .slick-slide img {
     max-width: 100%;
 }
 
-.hero-overlay .slick-prev:before {
+.room_section .slick-prev:before {
     content: " ";
     background-image: url(/src/images/svg/arrow-left-yellow.svg);
     background-position: center;
+
+@media screen and (max-width: 414px) {
+        left: 30px;
+    }
 
     @media screen and (min-width: 414px) {
         left: 41px;
@@ -44,10 +47,14 @@
     z-index: 999;
 }
 
-.hero-overlay .slick-next:before {
+.room_section .slick-next:before {
     content: " ";
-    background-image:url(/src/images/svg/arrow-right-yellow.svg);
+    background-image: url(/src/images/svg/arrow-right-yellow.svg);
     background-position: center;
+
+@media screen and (max-width: 414px) {
+        right: 20px;
+    }
 
     @media screen and (min-width: 414px) {
         right: 41px;
@@ -66,8 +73,8 @@
 
 
 
-.hero-overlay .slick-prev:before,
-.hero-overlay .slick-next:before {
+.room_section .slick-prev:before,
+.room_section .slick-next:before {
     content: " ";
     width: 40px;
     height: 40px;
@@ -79,17 +86,17 @@
 
 
 .hero-container_room {
-position: absolute;
+    position: absolute;
     left: 0;
-    top:520px;
-        top: 483px;
-        max-width: 415px;
-    
+    top: 520px;
+    top: 483px;
+    max-width: 415px;
+
 
     @media screen and (min-width: 1024px) {
         top: 468px;
         max-width: 1024px;
-        
+
     }
 
     @media screen and (min-width: 1280px) {
@@ -97,9 +104,9 @@ position: absolute;
         max-width: 1280px;
     }
 }
- 
+
 .hero-room_title {
-font-family: $fontTimesNewRoman;
+    font-family: $fontTimesNewRoman;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -107,63 +114,64 @@ font-family: $fontTimesNewRoman;
     letter-spacing: 0.05em;
     color: $titleColorWhite;
     max-width: 325px;
-    
-        @media screen and (min-width: 414px) {
-            font-size: 28px;
-            line-height: 32px;
-            letter-spacing: 0.05em;
-           
-        }
-    
-        @media screen and (min-width: 1024px) {
-            font-size: 36px;
-            line-height: 1.39;
-            letter-spacing: 0.05em;
-            max-width: 507px;
-            white-space:nowrap;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            position: relative;
-            left: 85px;
-}
-   
+
+    @media screen and (min-width: 414px) {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+
     }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: 1.39;
+        letter-spacing: 0.05em;
+        max-width: 507px;
+        white-space: nowrap;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: relative;
+        left: 85px;
+    }
+
+}
 
 .hero-description_room {
     color: #ffffff;
-        font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 1.25;
-            letter-spacing: 0.02em;
-    
-        @media screen and (min-width: 414px) {
-            font-size: 12px;
-            line-height: 1.25;
-            letter-spacing: 0.02em;
-            width: 325px;
-            margin-top: 14px;
-        }
-    
-        @media screen and (min-width: 1024px) {
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 414px) {
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        width: 325px;
+        margin-top: 14px;
+    }
+
+    @media screen and (min-width: 1024px) {
         font-weight: 700;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.02em;
-            width: 400px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            position: relative;
-            left: 85px;
-        }
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        width: 400px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: relative;
+        left: 85px;
+    }
 }
 
 .hero-soc_room {
     margin-left: -200px;
-// border: 2px solid #971414;
+
+    // border: 2px solid #971414;
     @media screen and (min-width: 414px) {
         margin-right: 42px;
         display: block;
@@ -181,137 +189,134 @@ font-family: $fontTimesNewRoman;
 }
 
 
-    
+
 
 .contacts-map-link-lux {
     border: 1px solid $AccentWithTransparentColor;
-        border-radius: 2px;
-        color: #e5e5e5;
+    border-radius: 2px;
+    color: #e5e5e5;
     display: flex;
-        align-items: center;
-        font-family: 'Montserrat';
-            color: #e5e5e5;
-            font-size: 12px;
-            line-height: 1.25;
-                letter-spacing: 0.01em;
-                @media screen and (min-width: 1024px) {
-                        font-weight: 400;
-                            font-size: 16px;
-                            line-height: 1.25;
-                                letter-spacing: 0.01em;
-                                justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: #e5e5e5;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
 
-                    }
-                
-                    @media screen and (min-width: 1280px) {
-                        display: none;
-                    }
-                
-           
+    @media screen and (min-width: 1024px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        justify-content: center;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+
+
 }
 
-.icon-soc_room{
+.icon-soc_room {
     fill: #f3c653;
 }
 
 
-    .hero-address_lux {
-        position: relative;
-        top:-600px;
-        left:150px;
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 1.25;
-            letter-spacing: 0.01em;
-            border-width: 100%;
-            display: flex;
-            color: #e5e5e5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-                 @media screen and (min-width: 1024px) {
-                     display: flex;
-                     align-items: center;
-                     padding-left: 0px;
-                     margin-left: 40px;
-                     margin-top: 30px;
-                    font-size: 16px;
-                    top: -40px;
-                    left: -35px;
-                  
-                 }
-        
-                 @media screen and (min-width: 1280px) {
-                     display: none;
-                 }
-                }
-   .location-icon {
+.hero-address_lux {
+position: relative;
+    top: -600px;
+    left: 120px;
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    border-width: 100%;
+    display: flex;
+    color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 414px) {
+        top: -550px;
+        left: 120px;
+    }
+    
+        @media screen and (min-width: 415px) {
+            top: -600px;
+            left: 150px;
+        }
+    
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: 16px;
+        top: -40px;
+        left: -35px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.location-icon {
     margin-right: 10px;
-        fill: #f3c653;
-   }
+    fill: #f3c653;
+}
 
 .hero-button_room {
     max-width: 414px;
+    position: absolute;
+        right: 73px;
+        top: 652px;
+
     @media screen and (min-width: 414px) {
-            position: absolute;
-            right: 73px;
-            top: 652px;
-        }
-    
-        @media screen and (min-width: 1024px) {
-            position: absolute;
-            right: 47px;
-            top: 620px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            right: 85px;
-            top: 606px;
-        }
+        position: absolute;
+        right: 73px;
+        top: 652px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        right: 47px;
+        top: 620px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 85px;
+        top: 606px;
+    }
 }
 
 .wrap_contact {
     display: flex;
-   
-        // align-content: center;
-    
-        @media screen and (min-width: 414px) {
-            bottom: 18px;
-            margin-top: 17px;
-        }
-    
-        @media screen and (min-width: 1024px) {
-            // margin-bottom: 44;
-            margin-left: 0px;
-            margin-top: 24px;
-         
-        }
-    
-        @media screen and (min-width: 1280px) {}
-    }
-    
-        .hero-soc_room {
-            gap: 22px;
-        }
 
-    .room__btn {
-        @media screen and (min-width: 414px) {
-            position: absolute;
-            right: 73px;
-            top: 652px;
-        }
-    
-        @media screen and (min-width: 1024px) {
-            position: absolute;
-            right: 47px;
-            top: 510px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            right: 85px;
-            top: 606px;
-        }
+    // align-content: center;
+
+    @media screen and (min-width: 414px) {
+        bottom: 18px;
+        margin-top: 17px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        // margin-bottom: 44;
+        margin-left: 0px;
+        margin-top: 24px;
+
+    }
+
+    @media screen and (min-width: 1280px) {}
 }
 
+.hero-soc_room {
+    gap: 22px;
+}

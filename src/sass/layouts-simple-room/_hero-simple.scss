@@ -1,5 +1,4 @@
-.hero-overlay {
-
+.room_section {
     margin: 0 auto;
     position: relative;
 
@@ -12,7 +11,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1280px;
+        max-width: 1600px;
     }
 }
 
@@ -20,10 +19,14 @@
     max-width: 100%;
 }
 
-.hero-overlay .slick-prev:before {
+.room_section .slick-prev:before {
     content: " ";
     background-image: url(/src/images/svg/arrow-left-yellow.svg);
     background-position: center;
+
+    @media screen and (max-width: 414px) {
+        left: 30px;
+    }
 
     @media screen and (min-width: 414px) {
         left: 41px;
@@ -44,10 +47,14 @@
     z-index: 999;
 }
 
-.hero-overlay .slick-next:before {
+.room_section .slick-next:before {
     content: " ";
     background-image: url(/src/images/svg/arrow-right-yellow.svg);
     background-position: center;
+
+    @media screen and (min-width: 414px) {
+        right: 20px;
+    }
 
     @media screen and (min-width: 414px) {
         right: 41px;
@@ -66,8 +73,8 @@
 
 
 
-.hero-overlay .slick-prev:before,
-.hero-overlay .slick-next:before {
+.room_section .slick-prev:before,
+.room_section .slick-next:before {
     content: " ";
     width: 40px;
     height: 40px;
@@ -219,8 +226,8 @@
 
 .hero-address_lux {
     position: relative;
-    top: -600px;
-    left: 150px;
+    top: -550px;
+    left: 120px;
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 400;
@@ -234,6 +241,15 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 414px) {
+        top: -550px;
+        left: 120px;
+    }
+
+@media screen and (min-width: 415px) {
+    top: -600px;
+    left: 150px;
+}
     @media screen and (min-width: 1024px) {
         display: flex;
         align-items: center;
@@ -258,6 +274,9 @@
 
 .hero-button_room {
     max-width: 414px;
+    position: absolute;
+    right: 73px;
+    top: 652px;
 
     @media screen and (min-width: 414px) {
         position: absolute;
@@ -299,23 +318,4 @@
 
 .hero-soc_room {
     gap: 22px;
-}
-
-.room__btn {
-    @media screen and (min-width: 414px) {
-        position: absolute;
-        right: 73px;
-        top: 652px;
-    }
-
-    @media screen and (min-width: 1024px) {
-        position: absolute;
-        right: 47px;
-        top: 510px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        right: 85px;
-        top: 606px;
-    }
 }
