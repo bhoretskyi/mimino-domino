@@ -203,19 +203,22 @@
     content: '';
   }
   .slick-prev {
-    left: 80%;
+    left: 70%;
     background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
+    @include tablet {
+      left: 77%;
+    }
     @include desktop {
-      left: 85%;
+      left: 82%;
     }
   }
   .slick-next {
     background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
-    left: 95%;
+    right: 0;
   }
   .slick-next:focus,
   .slick-next:hover {
