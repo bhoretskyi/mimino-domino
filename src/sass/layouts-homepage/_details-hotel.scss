@@ -197,7 +197,6 @@ z-index: 20;
 
     & .slick-arrow.slick-prev {
         left: 270px;
-        transform: translate(0);
         
         background: url(/src/images/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
         @include tablet{
