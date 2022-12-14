@@ -1,3 +1,4 @@
+
  $('.about-restaurant_slider').slick({
   dots: false,
   infinite: true,
@@ -31,6 +32,7 @@ $('.right').on("click", function () {
   $('.lux-time').slick('slickNext');
 });
 
+
 $('.about-hotel-slick').slick({
   dots: false,
   infinite: true,
@@ -38,6 +40,7 @@ $('.about-hotel-slick').slick({
   slidesToShow: 2,
   adaptiveHeight: true,
 });
+
 
 
 $(document).ready(function () {
@@ -50,3 +53,14 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
+
+$('.details-hotel-slick').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true
+});
+
+
