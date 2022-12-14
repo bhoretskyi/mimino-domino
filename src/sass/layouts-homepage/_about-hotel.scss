@@ -285,6 +285,7 @@
     
         @include desktop {
             width: 548px;
+            height: 245px;
             margin-left: 0px;
         }
 
@@ -295,6 +296,8 @@
                     width: 32px;
                     height: 32px;
                 }
+
+                 
         
                 .slick-prev {
         
@@ -339,21 +342,7 @@
                 }
         
         
-                .slick-next:hover,
-                .slick-next:focus {
-                    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
-                    width: 32px;
-                    height: 32px;
-        
-                }
-        
-                .slick-prev:hover,
-                .slick-prev:focus {
-        
-                    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
-                    width: 32px;
-                    height: 32px;
-                }
+                
 }
 
 
