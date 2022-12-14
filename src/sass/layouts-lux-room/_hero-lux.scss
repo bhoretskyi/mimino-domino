@@ -82,19 +82,19 @@
 position: absolute;
     left: 0;
     top:520px;
-
-    @media screen and (min-width: 414px) {
         top: 483px;
-        
-    }
+        max-width: 415px;
+    
 
     @media screen and (min-width: 1024px) {
         top: 468px;
+        max-width: 1024px;
         
     }
 
     @media screen and (min-width: 1280px) {
         top: 524px;
+        max-width: 1280px;
     }
 }
  
@@ -162,12 +162,12 @@ font-family: $fontTimesNewRoman;
 }
 
 .hero-soc_room {
-    margin-left: -230px;
+    margin-left: -200px;
 // border: 2px solid #971414;
     @media screen and (min-width: 414px) {
         margin-right: 42px;
         display: block;
-        margin-left: -230px;
+        margin-left: -200px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -183,7 +183,10 @@ font-family: $fontTimesNewRoman;
 
     
 
-.contacts-map-link {
+.contacts-map-link-lux {
+    border: 1px solid $AccentWithTransparentColor;
+        border-radius: 2px;
+        color: #e5e5e5;
     display: flex;
         align-items: center;
         font-family: 'Montserrat';
@@ -212,7 +215,7 @@ font-family: $fontTimesNewRoman;
 }
 
 
-    .hero-address {
+    .hero-address_lux {
         position: relative;
         top:-600px;
         left:150px;
@@ -235,8 +238,8 @@ font-family: $fontTimesNewRoman;
                      margin-left: 40px;
                      margin-top: 30px;
                     font-size: 16px;
-                    top:10px;
-                    left:210px;
+                    top: -40px;
+                    left: -35px;
                   
                  }
         
