@@ -169,9 +169,7 @@
 }
 
 .slider-item {
-  margin-right: 25px;
   @include tablet {
-    margin-right: 40px;
   }
   @include desktop {
     width: 254px;
@@ -186,6 +184,7 @@
   box-shadow: $SmallShadow;
   background: #dadada;
   border-radius: 2px;
+
   @include tablet {
     width: 428px;
     margin-top: -28px;
@@ -229,6 +228,13 @@
 }
 .slick-list {
   margin-right: -15px;
+  .slick-track {
+    display: flex;
+    gap: 25px;
+    @include tablet {
+      gap: 40px;
+    }
+  }
 }
 .about-restaurant_slick_foto {
   width: 100%;
