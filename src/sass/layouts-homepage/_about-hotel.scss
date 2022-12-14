@@ -1,12 +1,14 @@
 .vertical-line-left-hotel {
-    display: none;
-    position: absolute;
+    
     z-index: -1;
-    top: 0;
-    left: 253px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
+    filter: blur(.5px);
     height: 150%;
+    border: 1px solid #bababa66;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 140px;
+        
 
     @include desktop {
         display: block;
@@ -30,24 +32,26 @@
 }
 
 .vertical-line-right-hotel {
-    display: none;
+    display: block;
     position: absolute;
-    z-index: -1;
+    z-index: -5;
     top: 0;
-    left: 857px;
+    left: 274px;
     border: 1px solid rgba(186, 186, 186, 0.4);
     filter: blur(0.5px);
     height: 150%;
 
     @include desktop {
         display: block;
+        left: 857px;
     }
 
 }
 
 .about-hotel-section {
-    margin-top: 18px;
+   /* margin-top: 18px;*/
     position: relative;
+    padding-bottom: 50px;
 
     @include tablet {
         padding-top: 120px;
@@ -55,7 +59,10 @@
         padding-bottom: 100px;
     }
 
-    @include desktop {}
+    @include desktop {
+        padding-bottom: 125px;
+        
+    }
 }
 
 .visually-hidden {
@@ -161,9 +168,9 @@
 }
 
 .about-hotel-block-description {
-   /* margin-top: 102px;*/
-    /*width: 163px;
-    height: 120px;*/
+    
+    width: 163px;
+    
 
     @include tablet {
         margin-left: 220px;
@@ -188,7 +195,7 @@
     @include tablet {
         font-size: 16px;
         line-height: calc(20/16);
-        margin-right: 0;
+        margin-right: 21px;
     }
 
     @include desktop {
@@ -201,12 +208,15 @@
     display: flex;
     align-items: center;
     margin-top: 32px;
+    margin-bottom: 32px;
     @include tablet {
         margin-top: 142px;
+        margin-bottom: 0;
     }
     
     @include desktop {
         margin-top: 162px;
+        margin-bottom: 0;
     }
 }
 
@@ -215,8 +225,8 @@
     top: 564;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    max-width: 200px;
-    max-height: 278px;
+    width: 400px;
+    height: 278px;
     margin-bottom: 32px;
     @include tablet {
         max-height: 500px; 
@@ -227,7 +237,7 @@
     
         @include desktop {
         max-height: 574px;
-            max-width: 450px;
+        max-width: 450px;
         }
     
 
@@ -292,7 +302,7 @@
     @include desktop {
             top: 285px;
             left: 0px;
-            margin-bottom: 50px;
+            
     }
 }
 
