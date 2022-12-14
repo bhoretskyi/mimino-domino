@@ -173,8 +173,8 @@
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
-    color: $AccentColor;
-
+    color: $textColorBrown;
+    transition: $transition;
     @include tablet {
         justify-content: flex-end;
         margin-right: 0;
@@ -188,9 +188,16 @@
         margin-left: 563px;
         justify-content: flex-start;
     }
+        &:hover,
+        &:focus {
+        color: #f3c653;
+        fill: #f3c653;
+        cursor: pointer;
+        }
 }
 
 .icon__arrow {
-    fill: $AccentColor;
+    fill: $textColorBrown;
 }
+
 

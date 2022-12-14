@@ -1,5 +1,8 @@
 <section class="container">
   <div class="about-hotel-section">
+    <div class="vertical-line-left-hotel"></div>
+    <div class="vertical-line-center-hotel"></div>
+    <div class="vertical-line-right-hotel"></div>
     <h2 class="about-hotel-title visually-hidden">About hotel</h2>
     <p class="about-hotel-text">Amet minim mollit non</p>
     <h3 class="about-hotel-logo">MIMIHO</h3>
@@ -10,45 +13,191 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <img
-      class="about-hotel-img-room"
-      src="/src/images/joint-images/hotel-mob.jpg"
-      alt="Дезайнерскі аппартаменти"
-      width="244"
-      height="322"
-    />
-    <div class="about-hotel-block-description">
-      <p class="about-hotel-text-description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+    <picture>
+      <source
+        srcset="
+          ./images/joint-images/hotel-desk.jpg    1x,
+          ./images/joint-images/hotel-desk-2x.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/joint-images/hotel-tab.jpg    1x,
+          ./images/joint-images/hotel-tab-2x.jpg 2x
+        "
+        media="(min-width:1024px)"
+      />
+      <source
+        srcset="
+          ./images/joint-images/hotel-mob.jpg    1x,
+          ./images/joint-images/hotel-mob-2x.jpg 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img
+        class="about-hotel-img-room"
+        src="/src/images/joint-images/hotel-mob.jpg"
+        alt="Дезайнерскі аппартаменти"
+        width="244"
+        height="322"
+      />
+    </picture>
+
+    <div class="about-hotel-text-img">
+      <div class="about-hotel-block-description">
+        <p class="about-hotel-text-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture>
+        <source
+          srcset="
+            ./images/main/main-hotel-2-desk.jpg    1x,
+            ./images/main/main-hotel-2-desk-2x.jpg 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/main/main-hotel-2-tab.jpg    1x,
+            ./images/main/main-hotel-2-tab-2x.jpg 2x
+          "
+          media="(min-width:1024px)"
+        />
+        <source
+          srcset="
+            ./images/main/main-hotel-2-mob.jpg    1x,
+            ./images/main/main-hotel-2-mob-2x.jpg 2x
+          "
+        />
+        <img
+          class=".about-hotel-img-hole"
+          src="./images/main/main-hotel-2-desk.jpg"
+          alt="Дезайнерскі аппартаменти"
+          width="200"
+          height="278"
+        />
+      </picture>
     </div>
-    <img
-      class="about-hotel-img-hole"
-      src="/src/images/joint-images/hotel-mob.jpg"
-      alt="Дезайнерскі аппартаменти"
-      width="200"
-      height="278"
-    />
     <div class="about-hotel-slick">
-      <div>
-        <img
-          src="/src/images/main/slider-main/about-hotel/sl-main-hotel-1-desk.jpg"
-          alt=""
-        />
+      <div class="slider-hotel-item">
+        <picture>
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-desk.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-desk-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-tab-2x.jpg 2x
+            "
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-1-tab-2x.jpg 2x
+            "
+          />
+          <img
+            class="slick-img-hotel"
+            src="/src/images/main/slider-main/about-hotel/sl-main-hotel-1-desk.jpg"
+            alt=""
+          />
+        </picture>
       </div>
-      <div>
-        <img
-          src="/src/images/main/slider-main/about-hotel/sl-main-hotel-2-desk.jpg"
-          alt=""
-        />
+      <div class="slider-hotel-item">
+        <picture>
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-desk.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-desk-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-tab-2x.jpg 2x
+            "
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-2-tab-2x.jpg 2x
+            "
+          />
+          <img
+            class="slick-img-hotel"
+            src="/src/images/main/slider-main/about-hotel/sl-main-hotel-2-desk.jpg"
+            alt=""
+          />
+        </picture>
       </div>
-      <div>
-        <img
-          src="/src/images/main/slider-main/about-hotel/sl-main-hotel-3-desk.jpg"
-          alt=""
-        />
+      <div class="slider-hotel-item">
+        <picture>
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-desk.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-desk-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-tab-2x.jpg 2x
+            "
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-3-tab-2x.jpg 2x
+            "
+          />
+          <img
+            class="slick-img-hotel"
+            src="/src/images/main/slider-main/about-hotel/sl-main-hotel-3-desk.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="slider-hotel-item">
+        <picture>
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-desk.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-desk-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-tab-2x.jpg 2x
+            "
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-tab.jpg    1x,
+              ./images/main/slider-main/about-hotel/sl-main-hotel-4-tab-2x.jpg 2x
+            "
+          />
+          <img
+            class="slick-img-hotel"
+            src="/src/images/main/slider-main/about-hotel/sl-main-hotel-4-desk.jpg"
+            alt=""
+          />
+        </picture>
       </div>
     </div>
   </div>
