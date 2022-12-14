@@ -39,7 +39,6 @@ $('.about-hotel-slick').slick({
   adaptiveHeight: true,
 });
 
-
 $(document).ready(function () {
   $('.show').slick({
     infinite: true,
@@ -50,3 +49,4 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
+
