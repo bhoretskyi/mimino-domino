@@ -291,8 +291,8 @@
 
 
 
-.slick-prev:before,
-.slick-next:before {
+.about-hotel-slick .slick-prev:before,
+.about-hotel-slick .slick-next:before {
     content:'';
     background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
