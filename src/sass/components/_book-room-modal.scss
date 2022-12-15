@@ -1,0 +1,195 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/* 	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    >.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.room-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  
+  padding: 60px 15px;
+  background-color:  $titleColorWhite;
+  border: 1px solid $AccentColor;
+  border-radius: 2px;
+  @media screen and (max-width: 1023px) {
+    width: 414px; 
+  }
+  @include tablet {
+    width: 712px; 
+    padding: 60px;
+  }
+}
+
+.room-modal__exit {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+.room-modal-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  gap: 20px;
+}
+
+.room-modal-form__titel {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $fontTimesNewRoman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1,67px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $textColorBlack;
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+
+.room-modal-form__field {
+  position: relative;
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
+  @include tablet {
+    width: calc(50% - 10px);
+
+  }
+}
+
+.room-modal-form__field--maxwidth {
+  @include tablet {
+    margin-left: calc(50% + 10px);
+  }
+}
+
+.room-modal-form__input {
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 8px;
+  outline: transparent;
+  border: 1px solid $disabledBrownColor;
+
+  font-family: $fontTimesNewRoman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: $modalTextColor;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.room-modal-form__select {
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 8px;
+  outline: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  border: 1px solid $disabledBrownColor;
+  background: $disabledBrownColor;
+  background: url("data:image/svg+xml;utf8,<svg aria-hidden='true' style='position:absolute;width:0;height:0;overflow:hidden' fill='%23C79002' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M3.272 10.586c0.375-0.375 0.884-0.586 1.414-0.586s1.039 0.211 1.414 0.586l9.9 9.9 9.9-9.9c0.377-0.364 0.882-0.566 1.407-0.561s1.026 0.215 1.397 0.586c0.371 0.371 0.581 0.872 0.586 1.397s-0.197 1.030-0.561 1.407l-11.314 11.314c-0.375 0.375-0.884 0.586-1.414 0.586s-1.039-0.211-1.414-0.586l-11.314-11.314c-0.375-0.375-0.586-0.884-0.586-1.414s0.211-1.039 0.586-1.414z'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: 15px;
+  border-radius: 2px;
+  
+  font-family: $fontTimesNewRoman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: $modalTextColor;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.room-modal-form__label {
+  font-weight: 500;
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  
+  color: $disabledBrownColor;
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.room-modal-form__label--date {
+  font-size: 16px;
+  line-height: 1.25;
+} 
+
+/* .room-modal-form__label--svg {
+  position: absolute;
+  top: 19%;
+  right: 4%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  fill: $disabledBrownColor;
+  pointer-events: none;
+} */
+
+.room-modal-form__button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+  background: $textColorBlack;
+  border: 1px solid $AccentColor;
+  border-radius: 2px;
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: $titleColorWhite;
+  &:hover,
+  &:active {
+    background: $AccentColor;
+    color: $textColorBlack;
+  }
+  @include tablet {
+  font-size: 24px;
+  line-height: 1.21;
+  }
+}

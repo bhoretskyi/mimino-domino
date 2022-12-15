@@ -1,0 +1,55 @@
+<div class="backdrop visually-hidden" data-modal="3">
+    <div class="room-modal">
+        <button class="room-modal__exit" js-modal-close >
+            <svg  width="24" height="24">
+                <use href="/src/images/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="room-modal-form" action="">
+            <p class="room-modal-form__titel">забронювати номер</p>
+            <div class="room-modal-form__field">
+                <input class="room-modal-form__input" type="text" name="you_name" placeholder="Ваше ім’я" />
+                <label class="room-modal-form__label" for="">
+                    На кого забронювати номер?
+                </label>
+            </div>
+            <div class="room-modal-form__field">
+                <input class="room-modal-form__input" type="text" name="fone_num" placeholder="+38 (___) ___-__-__" />
+                <label class="room-modal-form__label" for="">
+                    Номер телефону
+                </label>
+            </div>
+            <div class="room-modal-form__field room-modal-form__field--maxwidth">
+                <select class="room-modal-form__select" type="text" id="tipe_room">
+                    <option >Двомісний люкс</option>
+                    <option >Двомісний</option>
+                    <option >Трьомісний</option>
+                </select>
+                <label class="room-modal-form__label" for="tipe_room">
+                    Категорія номеру
+                </label>
+            </div>
+            <div class="room-modal-form__field">
+                <select class="room-modal-form__select" type="text" id="comin_date">
+                    <option>Сьогодні</option>
+                    <option>Завтра</option>
+                    <option>Післязавтра</option>
+                </select>
+                <label class="room-modal-form__label room-modal-form__label--date" for="comin_date">
+                    Дата заїзду
+                </label>
+            </div>
+            <div class="room-modal-form__field">
+                <select class="room-modal-form__select" type="text" id="eviction_date">
+                    <option>Сьогодні</option>
+                    <option>Завтра</option>
+                    <option>Післязавтра</option>
+                </select>
+                <label class="room-modal-form__label room-modal-form__label--date" for="eviction_date">
+                    Дата виїзду
+                </label>
+            </div>
+            <button type="submit" class="room-modal-form__button">оформити бронювання</button>
+        </form>
+    </div>
+</div>
