@@ -172,6 +172,7 @@ z-index: 20;
 
     & .slick-list{
         overflow: hidden;
+        margin-right: 0;
     }
 
     @include desktop {
