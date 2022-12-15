@@ -1,6 +1,11 @@
-// td {
-//   outline: 1px solid black;
-// }
+td,
+th {
+  outline: 1px solid black;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
 
 .menu__flex-wrapper {
   @include tablet {
@@ -14,12 +19,13 @@
   }
 }
 
-.menu__table:not(:first-child) {
-  margin-top: 20px;
-}
+// .menu__table:not(:first-child) {
+//   margin-top: 16px;
+// }
 
 .section-restaurant__menu {
-  padding: 32px 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #f0ecd6;
 
   @include tablet {
@@ -48,6 +54,15 @@
 .menu__table--down {
   @media screen and (max-width: 1023px) {
     margin-top: 16px;
+  }
+  @include tablet {
+    margin-top: 20px;
+  }
+}
+
+.menu__table--down-cancelled {
+  @include tablet {
+    margin-top: 0px;
   }
 }
 
@@ -98,11 +113,11 @@
   color: $textColorBlack;
 
   @include tablet {
-    width: 293px;
+    width: 270px;
   }
 
   @include desktop {
-    width: 413px;
+    width: 367px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -110,6 +125,14 @@
 
 .menu__dish--down {
   padding-top: 8px;
+}
+
+.menu__dish--padding-calcell {
+  padding-bottom: 0;
+}
+
+.menu__dish-desserts--down {
+  padding-bottom: 11px;
 }
 
 .menu__portions {
@@ -163,9 +186,13 @@
   margin-top: 32px;
 
   @include tablet {
-    margin-top: 60px;
+    margin-top: 40px;
     margin-right: 0;
     margin-left: auto;
+  }
+
+  @include desktop {
+    margin-top: 30px;
   }
 }
 
