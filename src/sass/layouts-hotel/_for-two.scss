@@ -1,0 +1,7 @@
+.lux {
+    &__two-container {
+        @media screen and (max-width:1279px) {
+            background-image: none;
+        }
+    }
+}

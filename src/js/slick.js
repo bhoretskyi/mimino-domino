@@ -15,8 +15,9 @@ $('.lux-time').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   adaptiveHeight: true,
+  variableWidth: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
