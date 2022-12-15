@@ -125,6 +125,10 @@ th {
 
 .menu__dish--down {
   padding-top: 8px;
+
+  @include desktop {
+    padding-top: 12px;
+  }
 }
 
 .menu__dish--padding-calcell {
@@ -133,6 +137,10 @@ th {
 
 .menu__dish-desserts--down {
   padding-bottom: 11px;
+
+  @include desktop {
+    padding-bottom: 12px;
+  }
 }
 
 .menu__portions {
