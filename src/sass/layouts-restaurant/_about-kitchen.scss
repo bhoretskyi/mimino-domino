@@ -184,18 +184,18 @@
   
 
     .img {
+        width: 245px;
+        height: 245px;
+
+        @include tablet {
+        width: 194px;
+        height: 194px;        
+        }
+        @include desktop {
             width: 245px;
             height: 245px;
-            @include tablet {
-                width: 194px;
-                height: 194px;
-                
-            }
-            @include desktop {
-                width: 245px;
-                height: 245px;
-            }
         }
+    }
 }
 
 
