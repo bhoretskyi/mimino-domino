@@ -1,0 +1,204 @@
+.kitchen-container {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 34.8%, rgba(186, 186, 186, .4) 35%, rgba(0, 0, 0, 0) 35.1%, rgba(0, 0, 0, 0) 64.8%, rgba(186, 186, 186, .4) 65%, rgba(0, 0, 0, 0) 65.1%);
+   
+    @include tablet {
+        position: relative;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 25.9%, rgba(186, 186, 186, .4) 25.9%, rgba(186, 186, 186, .4) 26%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 50%, rgba(186, 186, 186, .4) 50%, rgba(186, 186, 186, .4) 50.1%, rgba(0, 0, 0, 0) 50.1%, rgba(0, 0, 0, 0) 72.5%, rgba(186, 186, 186, .4) 72.5%, rgba(186, 186, 186, .4) 72.6%, rgba(0, 0, 0, 0) 72.6%, rgba(0, 0, 0, 0));
+    }
+}
+
+.kitchen-title {
+    font-family: $fontTimesNewRoman;
+    padding-top: 16px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $preTitleColorGray;
+
+    @include tablet {
+        padding-top: 120px;
+        font-size: 32px;
+        line-height: 1.16;
+        margin-bottom: 4px;
+    }
+}
+
+.brand-name {
+    margin-bottom: 12px;
+    font-family: $fontFilm;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        color: $textColorDarkGrey;
+    @include tablet {
+        margin-bottom: 24px;
+            font-size: 64px;
+        }
+}
+
+.kitchen-text {
+    margin-bottom: 28px;
+    max-width: 258px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $textColorDarkGrey;
+
+    @include tablet {
+        margin-bottom: 142px;
+        max-width: 439px;
+        font-size: 16px;
+    }
+
+    @include desktop {
+        max-width: 518px;
+        margin-bottom: 162px;
+    }
+}
+
+
+.kitchen-img__up {
+    width: 244px;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+
+    @include tablet {
+        width: 400px;
+        position: absolute;
+        top: -32px;
+        right: 112px;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    @include desktop {
+        width: 460px;
+        top: -33px;
+        right: 180px;
+    }
+}
+
+.kitchen-wrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @include tablet {
+        gap: 48px;
+    }
+    @include desktop {
+        gap: 32px;
+    }
+}
+
+.kitchen-img__down {
+    width: 200px;
+    height: auto;
+
+    @include tablet {
+        width: 350px;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    @include desktop {
+        max-width: 460px;
+    }
+}
+
+.kitchen-text-down {
+    max-width: 160px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $textColorBrown;
+
+    @include tablet {
+        max-width: 312px;
+        font-size: 16px;
+    }
+}
+
+.slider-box {
+    overflow: hidden;
+    @include tablet{
+        overflow: visible;
+    }
+}
+
+.about-kitchen-slider {
+  transform: translateX(30%);
+  margin-right: 0;
+  margin-left: auto;
+  width: 330px;
+  margin-bottom: 72px;
+  @include tablet {
+    transform: translate(-30px, -96px);
+    width: 428px;
+    margin-bottom: 0;
+    
+  }
+
+  @include desktop {
+    width: 548px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 120%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: '';
+  }
+  .slick-prev {
+    left: 45%;
+    background: url('https://api.iconify.design/cil/arrow-left.svg') 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    @include tablet {
+      left: 75%;
+    }
+  }
+  .slick-next {
+    background: url('https://api.iconify.design/cil/arrow-right.svg') 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    left: 60%;
+    @include tablet {
+        left: 90%;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 25px;
+
+    @include tablet {
+        gap: 40px;
+        
+    }
+  }
+  
+
+    .img {
+            width: 245px;
+            height: 245px;
+            @include tablet {
+                width: 194px;
+                height: 194px;
+                
+            }
+            @include desktop {
+                width: 245px;
+                height: 245px;
+            }
+        }
+}
+
+
+
+
+

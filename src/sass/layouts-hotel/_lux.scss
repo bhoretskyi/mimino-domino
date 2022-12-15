@@ -123,22 +123,22 @@
     }
 
     &__reference, &__button {
-        font-family: $fontMontserrat;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+        // font-family: $fontMontserrat;
+        // font-weight: 700;
+        // font-size: 16px;
+        // line-height: 1.25;
+        // letter-spacing: 0.02em;
         color: $AccentColor;
         
-        width: 236px;
-        min-height: 48px;
-        padding: 10px 20px;
+        // width: 236px;
+        // min-height: 48px;
+        padding: 10px 50px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
 
-        transition: background-color $transition, color $transition;
+        // transition: background-color $transition, color $transition;
     }
 
     &__box {

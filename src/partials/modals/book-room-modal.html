@@ -1,0 +1,60 @@
+<div class="modal" data-modal="3">
+     <button type="button" class="js-modal-close modal__close-button--room">
+            <svg class="button-cross-svg--room modal__cross" width="24" height="24">
+                <use href="/src/images/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal-form--room">
+            <h2 class="form__heading--room">
+                ЗАБРОНЮВАТИ НОМЕР
+            </h2>
+            <div class="form__fix-space--tablet-room">
+                <div class="form__space--tablet-room">
+                    <lable for="whom" class="form__lable--room">
+                        <input type="text" class="lable__input-price--room" placeholder="Ваше ім’я" id="whom" reqired>
+                        <p class="lable__descript-par--room mrg">На кого забронювати номер?</p>
+                    </lable>
+                    <lable for="mobile" class="form__lable--room">
+                        <input type="tel" class="lable__input-price--room"
+                            title="Номер повинен бути в форматі '+380XXXXXXXXX'" placeholder="+38 (___) ___-__-__"
+                            pattern="([+][0-9\+]{12})" id="mobile" reqired>
+                        <p class="lable__descript-par--room">Номер телефону</p>
+                    </lable>
+                     
+                    
+                    
+                </div>
+                <div class="form__space--tablet-room">
+                    <lable for="count-of-peoples" class="form__lable--room">
+                        <select type="number" class="lable__input-count--room" id="count-of-peoples" reqired>
+                            <option value="2" selected>Двомісний люкс</option>
+                            <option value="3">Двомісний номер</option>
+                            <option value="4">Трьохмісний номер</option>
+                        </select>
+                        <p class="lable__descript-par--room mrg">Категорія номеру</p>
+                    </lable>
+
+                </div>
+                <div class="form__space--tablet-room">
+                    <lable for="which-day" class="form__lable--room">
+                        <select type="number" class="lable__input-count--room" id="which-day" reqired>
+                            <option value="today" selected>Сьогодні</option>
+                            <option value="tomorrow">Завтра</option>
+                            <option value="day_after_tomorrow">Післязавтра</option>
+                        </select>
+                        <p class="lable__descript-par--room">Дата заїзду</p>
+                    </lable>
+                    <lable for="which-day" class="form__lable--room">
+                        <select type="number" class="lable__input-count--room" id="which-day" reqired>
+                            <option value="today" selected>Сьогодні</option>
+                            <option value="tomorrow">Завтра</option>
+                            <option value="day_after_tomorrow">Післязавтра</option>
+                        </select>
+                        <p class="lable__descript-par--room">Дата виїзду</p>
+                    </lable>
+                </div>
+            </div>
+            <button type="submit" class="form__booking-button--room btn__modal">оформити бронювання</button>
+        </form>
+    </div>
+ 

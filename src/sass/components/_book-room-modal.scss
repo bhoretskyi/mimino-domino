@@ -1,0 +1,233 @@
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+   }
+   
+.overlay {
+   
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+.modal-test {
+    opacity: 0;
+   visibility: hidden;
+    transition: all .3s;
+    padding: 15px;
+    width: 100%;
+    z-index: 30;
+
+    @include mobile {
+        max-width: 414px;
+
+    }
+
+    @include tablet {
+        max-width: 712px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    background-color: $backGroundBeige;
+    border-radius: 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal__close-button--room {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    right: 16;
+    top: 16;
+    padding: 0;
+    cursor: pointer;
+    fill: $btnBlackColor;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    // background: url("data:image/svg+xml;utf8,<svg aria-hidden='true' style='position:absolute;width:0;height:0;overflow:hidden' fill='black' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path stroke-linejoin='round' stroke-linecap='round' stroke-miterlimit='4' stroke-width='2' d='M27.429 3.428l-24 24'></path><path stroke-linejoin=r'ound' stroke-linecap='round' stroke-miterlimit='4' stroke-width='2' d='M3.429 3.428l24 24'></path>/></svg>");
+}
+
+.button-cross-svg--room {
+    fill: $btnBlackColor;
+    position: absolute;
+
+}
+
+
+.form__heading--room {
+    font-family: $fontTimesNewRoman;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 24px;
+    
+
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: $textColorBlack;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+}
+
+.lable__descript-par--room {
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $textColorBrown;
+    margin-bottom: 20px;
+    margin-left: 15px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.form__fix-space--tablet-room {
+    @include tablet {
+        
+        justify-content: space-between;
+    }
+}
+
+.form__space--tablet-room {
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+
+    }
+}
+
+
+.mrg {
+    @include tablet {
+        margin-bottom: 28px;
+    }
+}
+
+
+
+.lable__input-count--room,
+.lable__input-price--room {
+    margin-bottom: 8px;
+    outline: none;
+    width: 100%;
+    height: 54px;
+    background-color: transparent;
+    border: 1px solid $textColorBrown;
+    font-family: $fontTimesNewRoman;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: #808080;
+    // ПОМЕНЯТЬ-----------------------
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 1.16;
+        width: 288px;
+        height: 64px;
+    }
+}
+
+.lable__input-count--room {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+select {
+
+    background: $disabledBrownColor;
+    background: url("data:image/svg+xml;utf8,<svg aria-hidden='true' style='position:absolute;width:0;height:0;overflow:hidden' fill='%23C79002' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M3.272 10.586c0.375-0.375 0.884-0.586 1.414-0.586s1.039 0.211 1.414 0.586l9.9 9.9 9.9-9.9c0.377-0.364 0.882-0.566 1.407-0.561s1.026 0.215 1.397 0.586c0.371 0.371 0.581 0.872 0.586 1.397s-0.197 1.030-0.561 1.407l-11.314 11.314c-0.375 0.375-0.884 0.586-1.414 0.586s-1.039-0.211-1.414-0.586l-11.314-11.314c-0.375-0.375-0.586-0.884-0.586-1.414s0.211-1.039 0.586-1.414z'/></svg>")#C79002;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 15px;
+    border-radius: 2px;
+
+    @include tablet {
+        font-size: 24px;
+        background-position-y: 20px;
+    }
+}
+
+
+.form__booking-button--room {
+    background: $btnBlackColor;
+    border: 1px solid $AccentColor;
+    border-radius: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    color: $titleColorWhite;
+    font-family: $fontMontserrat;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 20px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    line-height: 1.2;
+    text-align: center;
+    height: 64px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    transition: color $transition;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+        color: $textColorBlack;
+        background-color: $AccentColor;
+    }
+
+
+}
