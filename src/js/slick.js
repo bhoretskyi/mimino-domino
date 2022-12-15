@@ -70,7 +70,8 @@ $('.about-kitchen-slider').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
-=======
+});
+
 $(document).ready(function () {
   $('.show').slick({
     infinite: true,
