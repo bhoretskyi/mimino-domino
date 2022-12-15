@@ -41,9 +41,11 @@
         border: 2px solid $backGroundBeige;
     }
     
-    transition: border $transition;
+    transition: border $transition, background-color $transition;
+    
     &:hover, &:focus {
         border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
     }
 }
 
@@ -58,9 +60,10 @@
         border: 2px solid $btnWhiteColor;
     }
     
-    transition: border $transition;
+    transition: border $transition, background-color $transition;
     &:hover, &:focus {
         border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
     }
 }
 
@@ -72,9 +75,10 @@
         border: 2px solid $btnWhiteColor;
     }
     
-    transition: border $transition;
+    transition: border $transition, background-color $transition;
     &:hover, &:focus {
         border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
     }
 }
 
@@ -102,9 +106,7 @@
         line-height: 1.21;
         width: 434px;
     }
-     transition: color $transition;
-    transition: background-color $transition;
-   
+     transition: color $transition, background-color $transition;
     &:hover, &:focus {
         color: $textColorBlack;
         background-color: $AccentColor;
