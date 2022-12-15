@@ -1,13 +1,10 @@
 .footer{
-  max-width: 100%;
+    max-width: 1280px;
     background-color: #0e0c07;
     justify-content: center;
     margin: auto;
     display: flex;
     position: relative;
-  @include tablet{
-    position: relative;
-  }
 }
 
 
@@ -315,5 +312,20 @@ color: #F3C653;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #F3C653;
+  }
+}
+
+.gardient{
+
+  @media screen and (min-width: 413px) {
+    
+  background-image: linear-gradient(90deg, #0e0c07 270px, #7a7a7a66 230px, #0e0c07 272px);
+
+  }
+  @include tablet{
+    background-image: linear-gradient(90deg, #0e0c07 505px, #7a7a7a66 508px, #0e0c07 509px 741px, #7a7a7a66 745px, #0e0c07 745px);
+  }
+  @include desktop{
+   background-image: linear-gradient(90deg, #0e0c07 633px, #7a7a7a66 636px, #0e0c07 636px 940px, #7a7a7a66 940px, #0e0c07 944px);
   }
 }
