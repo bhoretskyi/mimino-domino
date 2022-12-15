@@ -147,7 +147,7 @@
   }
 
   @include desktop {
-    width: 367px;
+    width: 375px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -234,7 +234,7 @@
   }
 }
 
-// ----------------------------------------Горизонтальні лінії
+// ----------------------------------------Горизонтальні лінії через before/after
 // .menu__flex-wrapper::after {
 //   @include tablet {
 //     content: '';
