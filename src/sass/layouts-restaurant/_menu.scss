@@ -1,11 +1,3 @@
-td,
-th {
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-}
-
 .menu__flex-wrapper {
   @include tablet {
     display: flex;
@@ -19,58 +11,69 @@ th {
 }
 
 .section-restaurant__menu {
-  padding-top: 32px;
-  padding-bottom: 32px;
   background-color: #f0ecd6;
-
-  @include tablet {
-    padding-top: 58px;
-    padding-bottom: 40px;
-  }
 
   @include desktop {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 58px;
-    padding-bottom: 60px;
   }
 }
 
 .section-restaurant__menu .container {
-  position: relative;
-
-  // @include tablet {
-  //   padding-top: 58px;
-  //   padding-bottom: 32px;
-  //   background-image: linear-gradient(
-  //     90deg,
-  //     rgba(0, 0, 0, 0) 75.8%,
-  //     rgba(186, 186, 186, 0.4) 76%,
-  //     rgba(0, 0, 0, 0) 76.1%
-  //   );
-  //   background-position: 30% 30%;
-  //   background-size: 100vw 50vh;
-  //   background-repeat: no-repeat;
-  // }
-  // @include desktop {
-  //   padding-bottom: 50px;
-  //   background-image: linear-gradient(
-  //     90deg,
-  //     rgba(0, 0, 0, 0) 23.8%,
-  //     rgba(186, 186, 186, 0.4) 24%,
-  //     rgba(0, 0, 0, 0) 24.1%,
-  //     rgba(0, 0, 0, 0) 50.8%,
-  //     rgba(186, 186, 186, 0.4) 50%,
-  //     rgba(0, 0, 0, 0) 51.1%,
-  //     rgba(0, 0, 0, 0) 75.8%,
-  //     rgba(186, 186, 186, 0.4) 76%,
-  //     rgba(0, 0, 0, 0) 76.1%
-  //   );
-  //   background-position: 30% 30%;
-  //   background-size: 100vw 50vh;
-  //   background-repeat: no-repeat;
-  // }
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 34.8%,
+    rgba(186, 186, 186, 0.4) 35%,
+    rgba(0, 0, 0, 0) 35.1%,
+    rgba(0, 0, 0, 0) 64.8%,
+    rgba(186, 186, 186, 0.4) 65%,
+    rgba(0, 0, 0, 0) 65.1%
+  );
+  @include tablet {
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 25.9%,
+      rgba(186, 186, 186, 0.4) 25.9%,
+      rgba(186, 186, 186, 0.4) 26%,
+      rgba(0, 0, 0, 0) 26%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.1%,
+      rgba(0, 0, 0, 0) 50.1%,
+      rgba(0, 0, 0, 0) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.6%,
+      rgba(0, 0, 0, 0) 72.6%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  @include desktop {
+    padding-top: 58px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 25.9%,
+      rgba(186, 186, 186, 0.4) 25.9%,
+      rgba(186, 186, 186, 0.4) 26%,
+      rgba(0, 0, 0, 0) 26%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.1%,
+      rgba(0, 0, 0, 0) 50.1%,
+      rgba(0, 0, 0, 0) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.6%,
+      rgba(0, 0, 0, 0) 72.6%,
+      rgba(0, 0, 0, 0)
+    );
+  }
 }
 
 .menu__table {
@@ -232,48 +235,48 @@ th {
 }
 
 // ----------------------------------------Горизонтальні лінії
-.menu__flex-wrapper::after {
-  @include tablet {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 759px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
+// .menu__flex-wrapper::after {
+//   @include tablet {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 759px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
 
-  @include desktop {
-    left: 942px;
-  }
-}
+//   @include desktop {
+//     left: 942px;
+//   }
+// }
 
-.menu__flex-wrapper::before {
-  @include desktop {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 640px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-}
+// .menu__flex-wrapper::before {
+//   @include desktop {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 640px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
+// }
 
-.menu__title::before {
-  @include desktop {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 338px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-}
+// .menu__title::before {
+//   @include desktop {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 338px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
+// }
