@@ -160,13 +160,18 @@ padding: 0px;
 margin-left: -30px;
 width: 374px;
 z-index: 20;
-
-
     @include tablet {
         width: 662px;
         margin-bottom: 0;
         margin-left: -12px;
-    
+    }
+    @include desktop {
+        width: 874px;
+        margin-left: -33px;
+    }
+
+    & .slick-list{
+        overflow: hidden;
     }
 
     @include desktop {
@@ -194,6 +199,21 @@ z-index: 20;
     }
         
 
+    & .slick-arrow {
+        position: absolute;
+        top: 318px;
+        // margin: -30px 0px 0px 0px;
+        z-index: 10;
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+    @include tablet{
+        top: 326px;
+    }
+
+    }
+        
+
 
     & .slick-arrow.slick-prev {
         left: 270px;
@@ -204,13 +224,11 @@ left: 568px;
         }
 @include desktop{
     left: 776px;
-}
+}}
 
-    }
 
     & .slick-arrow.slick-next {
         right: 0px;
-
         background: url(/src/images/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
     }
 
@@ -251,13 +269,10 @@ left: 568px;
     & .slick-prev:focus,
     & .slick-prev:hover {
     background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
-    }
+    }}
 
-}
 
-// .slider-hotel-details-item{
-//     height: 100%;
-// }
+
 
 
 .hotel-bg-line1 {
