@@ -1,6 +1,6 @@
 .about-hotel {
     background: $backGroundBeige;
-
+    
     &_container {
         padding-top: 16px;
         padding-bottom: 20px;
@@ -226,25 +226,26 @@
     }
 
     .slick-prev {
-        left: 70%;
+        left: 0;
         background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
         width: 32px;
         height: 32px;
 
-        @include tablet {
-            left: 77%;
-        }
-
-        @include desktop {
-            left: 82%;
-        }
     }
 
     .slick-next {
         background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
         width: 32px;
         height: 32px;
-        right: 0;
+        right: 70%;
+
+        @include tablet {
+            right: 77%;
+        }
+        
+        @include desktop {
+            
+        }
     }
 
     .slick-next:focus,
@@ -257,19 +258,21 @@
         background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
     }
 
-         .slick-list {
-             margin-left: -15px;
-             overflow: hidden;
     
-             .slick-track {
-                 display: flex;
-                 gap: 25px;
-    
-                 @include tablet {
-                     gap: 40px;
-                 }
-             }
-         }
+}
+
+.about-hotel_slider .slick-list {
+    margin-left: -15px;
+
+
+    .slick-track {
+        display: flex;
+        gap: 25px;
+
+        @include tablet {
+            gap: 40px;
+        }
+    }
 }
 
 

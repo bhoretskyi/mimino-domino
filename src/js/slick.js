@@ -142,5 +142,7 @@ $('.about-hotel_slider').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
+  variableWidth: true,
+  arrows: true,
 });
 
