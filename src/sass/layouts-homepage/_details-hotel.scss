@@ -157,7 +157,7 @@ z-index: 10;
 .details-hotel-slick{
 position: relative;
 padding: 0px;
-margin-left: -30px;
+margin-left: -15px;
 width: 374px;
 z-index: 20;
     @include tablet {
@@ -172,6 +172,7 @@ z-index: 20;
 
     & .slick-list{
         overflow: hidden;
+        margin-right: 0;
     }
 
     @include desktop {
