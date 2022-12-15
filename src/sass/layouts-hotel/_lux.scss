@@ -119,7 +119,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+
     }
 
     &__reference, &__button {
@@ -167,6 +167,11 @@
         gap: 16px;
         @include tablet {
             gap: 40px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .slick-list {
+            padding: 0 0 0 30% !important;
         }
     }
 }
