@@ -1,5 +1,5 @@
 
- $('.about-restaurant_slider').slick({
+$('.about-restaurant_slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
@@ -63,6 +63,14 @@ $('.details-hotel-slick').slick({
   variableWidth: true
 });
 
+
+$('.about-kitchen-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+=======
 $(document).ready(function () {
   $('.show').slick({
     infinite: true,
