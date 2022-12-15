@@ -6,8 +6,12 @@
         top: 0px;
         right: 0px;
         left: 0px;
-        height: 50px;
+        height: 65px;
         z-index: 999;
+
+        @include tablet{
+            height: 100px;
+        }
 
         display: flex;
         align-items: center;
