@@ -160,9 +160,10 @@
         }
     }
 
-.lux-slider {
+.three-slider {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 20px;
     margin-bottom: 20px;
     @include tablet {
@@ -176,21 +177,37 @@
     &__buttons {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        width: 100%;
         gap: 32px;
 
         @include tablet {
+            padding-left: 23px;
             justify-content: flex-start;
         }
     }
+
+    .three-slider__left,
+    .three-slider__right {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: fill $transition;
+        }
+    
+    .three-slider__left:hover>.icon-left {
+            fill: $AccentColor;
+        }
+    
+    .three-slider__right:hover>.icon-right {
+            fill: $AccentColor;
     }
 
         .three-time {
             width: 284px;
-    
             @include tablet {
                 width: 428px;
             }
-    
             @include desktop {
                 width: 548px;
             }
@@ -201,10 +218,16 @@
     
             .slick-list .slick-track {
                 gap: 16px;
-    
                 @include tablet {
                     gap: 40px;
                 }
             }
+            @media screen and (max-width:1024px) {
+                .slick-list {
+                    padding: 0 30% 0 0 !important;
+                }
+            }
+
         }
+    }
 }

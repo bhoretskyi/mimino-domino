@@ -13,14 +13,15 @@ $('.lux-time').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 0,
+  speed: 200,
   slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
-      slidesToShow: 1.5,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
     }
   }]
@@ -36,14 +37,15 @@ $('.two-time').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 0,
+  speed: 200,
   slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
-      slidesToShow: 1.5,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
     }
   }]
@@ -59,14 +61,15 @@ $('.three-time').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 0,
+  speed: 200,
   slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
-      slidesToShow: 1.5,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
     }
   }]
