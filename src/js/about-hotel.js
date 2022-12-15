@@ -1,4 +1,4 @@
-$('.about-hotel-slick').slick({
+$('.about-hotel_slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
