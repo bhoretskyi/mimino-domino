@@ -1,7 +1,32 @@
-.modal-table {
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+   }
+   
+.overlay {
+   
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+.modal {
+    opacity: 0;
+   visibility: hidden;
     transition: all .3s;
     padding: 15px;
     width: 100%;
+    z-index: 30;
 
     @include mobile {
         max-width: 414px;

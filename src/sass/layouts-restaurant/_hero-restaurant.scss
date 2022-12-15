@@ -1,8 +1,8 @@
 .hero-restaurant {
     width: 100%;
-    max-width: 1600px;
-    padding-top: 150px;
-    padding-bottom: 20px;
+    max-width: 1280px;
+    padding-top: 181px;
+    padding-bottom: 22px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -32,8 +32,8 @@
 
 
     @include tablet{
-        width: 100%;
-        padding-top: 175px;
+        padding-top: 188px;
+        padding-bottom: 18.5px;
         background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -55,7 +55,8 @@
 
 } 
 @include desktop {
-    width: 100%;
+    padding-top: 164px;
+    padding-bottom: 64px;
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -85,15 +86,14 @@
     margin-bottom: 61px;
 
     @include tablet {
-        margin-bottom: 28px;
-        padding-left: 33px;
-        padding-right: 33px;
+        margin-bottom: 26px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     @include desktop {
         margin-bottom: 0;
         padding-left: 70px;
         padding-right: 70px;
-        padding-bottom: 50px;
     }
 }
 
@@ -102,7 +102,7 @@
     
 position: absolute;
 }
-top: 54;
+top: 64;
 right: 15;
 
     display: flex;
@@ -128,7 +128,6 @@ border-radius: 2px;
 font-size: 16px;
 line-height: 1.25;
 max-width: 285px;
-right: 755;
 height: 56px;
 }
 }
@@ -200,7 +199,7 @@ margin-bottom: 113px;
 @include tablet {
 font-size: 36px;
 line-height: 1.13;
-margin-bottom: 144px;
+margin-bottom: 137px;
     }
 }
 
@@ -210,6 +209,10 @@ margin-bottom: 144px;
         margin-bottom: 0;
         margin-right: 40px;
                     }
+                    @include desktop {
+                        margin-bottom: 0;
+                        margin-right: 60px;
+                                    }
 }
 
 .hero__buttons{
@@ -217,12 +220,11 @@ margin-bottom: 144px;
     flex-direction: column;
     align-items: center;
     @include tablet {
-    padding-left: 33px;
 flex-direction: row;
 justify-content: flex-end;
 margin-bottom: 0;
-
             }
+            
 }
 
 

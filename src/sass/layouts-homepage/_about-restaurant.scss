@@ -3,14 +3,45 @@
   &_container {
     padding-top: 16px;
     padding-bottom: 20px;
-
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 34.8%,
+      rgba(186, 186, 186, 0.4) 35%,
+      rgba(0, 0, 0, 0) 35.1%,
+      rgba(0, 0, 0, 0) 64.8%,
+      rgba(186, 186, 186, 0.4) 65%,
+      rgba(0, 0, 0, 0) 65.1%
+    );
     @include tablet {
       padding-top: 120px;
       padding-bottom: 32px;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 23.8%,
+        rgba(186, 186, 186, 0.4) 24%,
+        rgba(0, 0, 0, 0) 24.1%,
+        rgba(0, 0, 0, 0) 50.8%,
+        rgba(186, 186, 186, 0.4) 50%,
+        rgba(0, 0, 0, 0) 51.1%,
+        rgba(0, 0, 0, 0) 75.8%,
+        rgba(186, 186, 186, 0.4) 76%,
+        rgba(0, 0, 0, 0) 76.1%
+      );
     }
     @include desktop {
-      padding-top: 120px;
       padding-bottom: 50px;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 23.8%,
+        rgba(186, 186, 186, 0.4) 24%,
+        rgba(0, 0, 0, 0) 24.1%,
+        rgba(0, 0, 0, 0) 50.8%,
+        rgba(186, 186, 186, 0.4) 50%,
+        rgba(0, 0, 0, 0) 51.1%,
+        rgba(0, 0, 0, 0) 75.8%,
+        rgba(186, 186, 186, 0.4) 76%,
+        rgba(0, 0, 0, 0) 76.1%
+      );
     }
   }
   &_container {
@@ -55,7 +86,6 @@
       width: 460px;
       max-width: 460px;
       margin-bottom: -98px;
-      transform: translateY(-98px);
     }
   }
 }
@@ -139,12 +169,8 @@
 }
 
 .slider-item {
-  margin-right: 25px;
-
   @include tablet {
-    margin-right: 40px;
   }
-
   @include desktop {
     width: 254px;
   }
@@ -155,13 +181,17 @@
   margin-left: auto;
   width: 330px;
   margin-bottom: 72px;
+  box-shadow: $SmallShadow;
+  background: #dadada;
+  border-radius: 2px;
+
   @include tablet {
     width: 428px;
-    margin-bottom: 0;
+    margin-top: -28px;
   }
-
   @include desktop {
     width: 548px;
+    margin-top: -58px;
   }
 
   .slick-prev,
@@ -173,27 +203,42 @@
     content: '';
   }
   .slick-prev {
-    left: 75%;
-    background: url('https://api.iconify.design/cil/arrow-left.svg') 0 0 /100% no-repeat;
+    left: 70%;
+    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
+    @include tablet {
+      left: 77%;
+    }
     @include desktop {
-      left: 75%;
+      left: 82%;
     }
   }
   .slick-next {
-    background: url('https://api.iconify.design/cil/arrow-right.svg') 0 0 /100% no-repeat;
+    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
-    left: 95%;
+    right: 0;
+  }
+  .slick-next:focus,
+  .slick-next:hover {
+    background: url(/src/images/svg/arrow-right-yellow.svg) 0 0 /100% no-repeat;
+  }
+  .slick-prev:focus,
+  .slick-prev:hover {
+    background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
   }
 }
 .slick-list {
   margin-right: -15px;
+  .slick-track {
+    display: flex;
+    gap: 25px;
+    @include tablet {
+      gap: 40px;
+    }
+  }
 }
 .about-restaurant_slick_foto {
   width: 100%;
-
-  background: #dadada;
-  border-radius: 2px;
 }

@@ -41,6 +41,19 @@ $('.about-hotel-slick').slick({
   adaptiveHeight: true,
 });
 
+
+
+$(document).ready(function () {
+  $('.show').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+
 $('.details-hotel-slick').slick({
   dots: false,
   infinite: true,
@@ -50,11 +63,45 @@ $('.details-hotel-slick').slick({
   variableWidth: true
 });
 
+
 $('.about-kitchen-slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
+=======
+$(document).ready(function () {
+  $('.show').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+ 
+$(document).ready(function () {
+  $('.slideshow').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+ 
+ 
+$(document).ready(function () {
+  $('.slidephoto').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
 });
 
