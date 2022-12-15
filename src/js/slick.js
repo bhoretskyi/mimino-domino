@@ -13,11 +13,10 @@ $('.lux-time').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 300,
+  speed: 0,
   slidesToShow: 2,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  variableWidth: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
@@ -31,6 +30,52 @@ $('.left').on("click", function () {
 })
 $('.right').on("click", function () {
   $('.lux-time').slick('slickNext');
+});
+
+$('.two-time').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 0,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+    }
+  }]
+});
+$('.left-two').on("click", function () {
+  $('.two-time').slick('slickPrev');
+})
+$('.right-two').on("click", function () {
+  $('.two-time').slick('slickNext');
+});
+
+$('.three-time').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 0,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+    }
+  }]
+});
+$('.left-three').on("click", function () {
+  $('.three-time').slick('slickPrev');
+})
+$('.right-three').on("click", function () {
+  $('.three-time').slick('slickNext');
 });
 
 
