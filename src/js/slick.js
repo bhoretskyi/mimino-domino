@@ -56,12 +56,41 @@ $(document).ready(function () {
 });
 
 $('.details-hotel-slick').slick({
-  dots: false,
+  arrows: true,
   infinite: true,
   speed: 300,
+   cssEase: 'linear',
+    centerMode: true,
   slidesToShow: 3,
-  centerMode: true,
-  variableWidth: true
+  slidesToScroll: 4,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+});
+
+$('.details-restaurant-slick').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+   cssEase: 'linear',
+    centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
 });
 
 
