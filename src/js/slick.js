@@ -1,5 +1,5 @@
 
- $('.about-restaurant_slider').slick({
+$('.about-restaurant_slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
@@ -15,8 +15,9 @@ $('.lux-time').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   adaptiveHeight: true,
+  variableWidth: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
@@ -92,4 +93,46 @@ $('.details-restaurant-slick').slick({
   ]
 });
 
+
+$('.about-kitchen-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+});
+
+$(document).ready(function () {
+  $('.show').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+ 
+$(document).ready(function () {
+  $('.slideshow').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
+ 
+ 
+$(document).ready(function () {
+  $('.slidephoto').slick({
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
+  });
+});
 

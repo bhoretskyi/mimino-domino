@@ -3,34 +3,32 @@
     <h4 class="three__pre-title">Amet minim mollit non</h4>
     <h3 class="three__logo">Mimino</h3>
     <h2 class="three__title">Трьохмісний номер</h2>
-    <div class="three__room">
-      <p class="three__description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
+    <p class="three__description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
     <picture>
       <source
         srcset="
-          ./images/joint-images/hotel-desk.jpg 1x,
-          ./images/joint-images/hotel-desk.jpg 2x
+          ./images/joint-images/hotel-desk.jpg    1x,
+          ./images/joint-images/hotel-desk-2x.jpg 2x
         "
         media="(min-width: 1280px)"
         sizes="460px"
       />
       <source
         srcset="
-          ./images/joint-images/hotel-tab.jpg 1x,
-          ./images/joint-images/hotel-tab.jpg 2x
+          ./images/joint-images/hotel-tab.jpg    1x,
+          ./images/joint-images/hotel-tab-2x.jpg 2x
         "
         media="(min-width: 1024px)"
         sizes="400px"
       />
       <source
         srcset="
-          ./images/joint-images/hotel-mob.jpg 1x,
-          ./images/joint-images/hotel-mob.jpg 2x
+          ./images/joint-images/hotel-mob.jpg    1x,
+          ./images/joint-images/hotel-mob-2x.jpg 2x
         "
         media="(min-width: 320px)"
         sizes="244px"
@@ -48,16 +46,16 @@
             <picture class="lux-time__picture">
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-1-desk.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-1-desk.jpg 2x
+                  ./images/slider-hotel/sl-hotel-1-desk.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-1-desk-2x.jpg 2x
                 "
                 media="(min-width: 1280px)"
                 sizes="254px"
               />
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-1-tab.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-1-tab.jpg 2x
+                  ./images/slider-hotel/sl-hotel-1-tab.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-1-tab-2x.jpg 2x
                 "
                 media="(min-width: 320px)"
                 sizes="194px"
@@ -73,8 +71,8 @@
             <picture class="lux-time__picture">
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-2-desk.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-2-desk.jpg 2x
+                  ./images/slider-hotel/sl-hotel-2-desk.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-2-desk-2x.jpg 2x
                 "
                 media="(min-width: 1280px)"
                 sizes="254px"
@@ -82,8 +80,8 @@
               />
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-2-tab.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-2-tab.jpg 2x
+                  ./images/slider-hotel/sl-hotel-2-tab.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-2-tab-2x.jpg 2x
                 "
                 media="(min-width: 320px)"
                 sizes="194px"
@@ -100,51 +98,24 @@
             <picture class="lux-time__picture">
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-1-desk.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-1-desk.jpg 2x
+                  ./images/slider-hotel/sl-hotel-3-desk.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-3-desk-2x.jpg 2x
                 "
                 media="(min-width: 1280px)"
                 sizes="254px"
               />
               <source
                 srcset="
-                  ./images/slider-hotel/sl-hotel-1-tab.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-1-tab.jpg 2x
+                  ./images/slider-hotel/sl-hotel-3-tab.jpg    1x,
+                  ./images/slider-hotel/sl-hotel-3-tab-2x.jpg 2x
                 "
                 media="(min-width: 320px)"
                 sizes="194px"
               />
               <img
                 class="lux-time__img"
-                src="./images/slider-hotel/sl-hotel-1-tab.jpg"
+                src="./images/slider-hotel/sl-hotel-3-tab.jpg"
                 alt="гарна раковина для вмивання"
-              />
-            </picture>
-          </li>
-          <li class="lux-time__item">
-            <picture class="lux-time__picture">
-              <source
-                srcset="
-                  ./images/slider-hotel/sl-hotel-2-desk.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-2-desk.jpg 2x
-                "
-                media="(min-width: 1280px)"
-                sizes="254px"
-                type="image/jpg"
-              />
-              <source
-                srcset="
-                  ./images/slider-hotel/sl-hotel-2-tab.jpg 1x,
-                  ./images/slider-hotel/sl-hotel-2-tab.jpg 2x
-                "
-                media="(min-width: 320px)"
-                sizes="194px"
-                type="image/jpg"
-              />
-              <img
-                class="lux-time__img"
-                src="./images/slider-hotel/sl-hotel-2-tab.jpg"
-                alt="чашка кави на підвіконні"
               />
             </picture>
           </li>
@@ -164,13 +135,14 @@
       </div>
 
       <div class="three__buttons">
-        <a
-          class="lux__reference btn btn__room link"
-          href="/src/triple-room.html"
+        <button type="button" class="btn btn__hotel--dark"> <a
+          class="lux__reference link"
+          href="/src/simple-room.html"
           >Детальніше</a
-        >
-        <button
-          class="three__button btn btn__room js-open-modal" data-modal="2"
+        ></button>
+
+        <button 
+          class="btn btn__hotel--dark js-open-modal" data-modal="2"
           type="button"
           data-modal-price-open
         >
