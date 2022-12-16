@@ -52,7 +52,7 @@
     background-image: url(/src/images/svg/arrow-right-yellow.svg);
     background-position: center;
 
-    @media screen and (min-width: 414px) {
+    @media screen and (max-width: 414px) {
         right: 20px;
     }
 
@@ -71,6 +71,10 @@
     }
 }
 
+.room_section .slick-slider {
+    overflow: hidden;
+    max-width: 1280px;
+}
 
 
 .room_section .slick-prev:before,
@@ -226,7 +230,7 @@
 
 .hero-address_lux {
     position: relative;
-    top: -550px;
+    top: -600px;
     left: 120px;
     font-family: $fontMontserrat;
     font-style: normal;
@@ -292,7 +296,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        right: 85px;
+        right: 105px;
         top: 606px;
     }
 }
@@ -300,7 +304,7 @@
 .wrap_contact {
     display: flex;
 
-    // align-content: center;
+
 
     @media screen and (min-width: 414px) {
         bottom: 18px;
@@ -308,7 +312,7 @@
     }
 
     @media screen and (min-width: 1024px) {
-        // margin-bottom: 44;
+
         margin-left: 0px;
         margin-top: 24px;
 
