@@ -23,7 +23,8 @@
 }
 
 .hero-container {
-  width: 414px;
+  width: 100%;
+  max-width: 414px;
   display: flex;
   flex-direction: column;
   padding-bottom: 22px;
