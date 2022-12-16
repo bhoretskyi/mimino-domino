@@ -251,7 +251,7 @@ background-repeat: no-repeat;
 .hero-address_lux {
     position: relative;
     top: -600px;
-    left: 120px;
+    left: 100px;
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 400;
@@ -267,7 +267,7 @@ background-repeat: no-repeat;
 
     @media screen and (max-width: 414px) {
         top: -500px;
-        left: 140px;
+        left: 100px;
     }
 
     @media screen and (min-width: 415px) {
@@ -300,10 +300,15 @@ background-repeat: no-repeat;
 .hero-button_room {
     max-width: 414px;
     position: absolute;
-    right: 73px;
+    right: 40px;
     top: 652px;
+@media screen and (max-width: 414px) {
+        position: absolute;
+        right: 40px;
+        top: 652px;
+    }
 
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: 415px) {
         position: absolute;
         right: 73px;
         top: 652px;

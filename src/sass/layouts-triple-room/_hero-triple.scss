@@ -28,16 +28,16 @@
 }
 
 
-.room_section .slick-next{
+.room_section .slick-next {
     content: " ";
-        width: 40px;
-        height: 40px;
-        background-color: rgba(0, 0, 0, .65);
-        background-image: url(/src/images/svg/arrow-left-yellow.svg);
-        background-position: 50%;
-        background-repeat: no-repeat;
-        right: 15px;
-    
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .65);
+    background-image: url(/src/images/svg/arrow-left-yellow.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    right: 15px;
 }
 
 .room_section .slick-next::before {
@@ -48,8 +48,7 @@
     content: " ";
 }
 
-.room_section .slick-next
- {
+.room_section .slick-next {
     z-index: 10;
     cursor: pointer;
     width: 40px;
@@ -73,7 +72,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
+
 }
 
 .room_section .slick-prev {
@@ -94,6 +93,7 @@
     background-color: rgba(0, 0, 0, .65);
     background-position: center;
 }
+
 .room_section .slick-next:hover,
 .room_section .slick-next {
     color: transparent;
@@ -109,9 +109,6 @@
     background-image: url(/src/images/svg/arrow-left-yellow.svg);
     background-repeat: no-repeat;
 }
-
-
-
 
 .hero-container_room {
     position: absolute;
@@ -255,7 +252,7 @@
 .hero-address_lux {
     position: relative;
     top: -600px;
-    left: 120px;
+    left: 100px;
     font-family: $fontMontserrat;
     font-style: normal;
     font-weight: 400;
@@ -271,7 +268,7 @@
 
     @media screen and (max-width: 414px) {
         top: -500px;
-        left: 140px;
+        left: 100px;
     }
 
     @media screen and (min-width: 415px) {
@@ -304,10 +301,16 @@
 .hero-button_room {
     max-width: 414px;
     position: absolute;
-    right: 73px;
+    right: 40px;
     top: 652px;
 
-    @media screen and (min-width: 414px) {
+    @media screen and (max-width: 414px) {
+        position: absolute;
+        right: 40px;
+        top: 652px;
+    }
+
+    @media screen and (min-width: 415px) {
         position: absolute;
         right: 73px;
         top: 652px;
@@ -323,10 +326,11 @@
         right: 85px;
         top: 606px;
     }
-        @media screen and (min-width: 1380px) {
-            right: 400px;
-            top: 606px;
-        }
+
+    @media screen and (min-width: 1380px) {
+        right: 400px;
+        top: 606px;
+    }
 }
 
 .wrap_contact {
