@@ -20,6 +20,7 @@
 }
 
 
+
 .room_section .slick-slider {
     overflow: hidden;
     max-width: 1280px;
@@ -35,7 +36,6 @@
         background-image: url(/src/images/svg/arrow-left-yellow.svg);
         background-position: 50%;
         background-repeat: no-repeat;
-        
         right: 15px;
     
 }
@@ -73,7 +73,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    transform: translateX(100%);
+    
 }
 
 .room_section .slick-prev {
