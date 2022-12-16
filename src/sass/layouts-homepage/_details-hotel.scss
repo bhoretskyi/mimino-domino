@@ -208,6 +208,7 @@ z-index: 20;
         font-size: 0;
         width: 32px;
         height: 32px;
+        left: 270px;
     @include tablet{
         top: 326px;
     }
@@ -217,7 +218,7 @@ z-index: 20;
 
 
     & .slick-arrow.slick-prev {
-        left: 270px;
+        left: 200px;
         
         background: url(/src/images/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
         @include tablet{
