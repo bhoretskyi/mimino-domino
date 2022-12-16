@@ -163,14 +163,6 @@
   }
 }
 
-.slider-item {
-  @include tablet {
-  }
-  @include desktop {
-    width: 245px;
-  }
-}
-
 .about-restaurant_slider {
   margin-right: 0;
   margin-left: auto;
@@ -224,10 +216,15 @@
   .slick-prev:hover {
     background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
   }
+  .slider-item {
+    @include desktop {
+      width: 254px;
+    }
+  }
 }
 .slick-list {
   margin-right: -15px;
-  
+
   .slick-track {
     display: flex;
     gap: 25px;
