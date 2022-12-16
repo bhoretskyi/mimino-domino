@@ -124,6 +124,7 @@
 }
 
 .slider-box {
+    margin-right: -15px;
     overflow: hidden;
     @include tablet{
         overflow: visible;
@@ -131,7 +132,6 @@
 }
 
 .about-kitchen-slider {
-  transform: translateX(30%);
   margin-right: 0;
   margin-left: auto;
   width: 330px;
@@ -156,53 +156,55 @@
     content: '';
   }
   .slick-prev {
-    left: 45%;
-    background: url('https://api.iconify.design/cil/arrow-left.svg') 0 0 /100% no-repeat;
+    left: 66%;
+    background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
+    &:hover, 
+    &focus {
+        background-image: url(/src/images/svg/arrow-left-yellow.svg);
+    }
     @include tablet {
-      left: 75%;
+      left: 80%;
+    }
+    @include desktop {
+        left: 85%;
     }
   }
   .slick-next {
-    background: url('https://api.iconify.design/cil/arrow-right.svg') 0 0 /100% no-repeat;
+    background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
-    left: 60%;
+    left: 85%;
+    &:hover,
+    &focus {
+        background-image: url(/src/images/svg/arrow-right-yellow.svg);
+        }
     @include tablet {
-        left: 90%;
+        left: 93%;
+    }
+    @include desktop {
+        left: 95%;
     }
   }
 
-  .slick-list {
-    
-  }
 
-  .slick-track {
-    
-    display: flex;
-    gap: 25px;
-
-    @include tablet {
-        gap: 40px;
+ 
+    .img {
+        width: 100%;
         
     }
-  }
 
-
-    .img {
-        width: 245px;
-        height: 245px;
-
-        @include tablet {
-        width: 194px;
-        height: 194px;        
-        }
-        @include desktop {
-            width: 245px;
-            height: 245px;
-        }
-    }
+         .slick-track {
+    
+             display: flex;
+             gap: 25px;
+    
+             @include tablet {
+                 gap: 40px;
+    
+             }
+         }
 }
 
 

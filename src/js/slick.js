@@ -104,8 +104,8 @@ $('.details-hotel-slick').slick({
   arrows: true,
   infinite: true,
   speed: 300,
-   cssEase: 'linear',
-    centerMode: true,
+  cssEase: 'linear',
+  centerMode: true,
   slidesToShow: 3,
   slidesToScroll: 4,
   variableWidth: true,
@@ -123,8 +123,8 @@ $('.details-restaurant-slick').slick({
   arrows: true,
   infinite: true,
   speed: 300,
-   cssEase: 'linear',
-    centerMode: true,
+  cssEase: 'linear',
+  centerMode: true,
   slidesToShow: 3,
   slidesToScroll: 4,
   variableWidth: true,
@@ -145,6 +145,7 @@ $('.about-kitchen-slider').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
+  variableWidth: true,
 });
 
 $(document).ready(function () {
@@ -157,7 +158,7 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
- 
+
 $(document).ready(function () {
   $('.slideshow').slick({
     infinite: true,
@@ -168,8 +169,8 @@ $(document).ready(function () {
     centerMode: true,
   });
 });
- 
- 
+
+
 $(document).ready(function () {
   $('.slidephoto').slick({
     infinite: true,
