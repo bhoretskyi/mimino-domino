@@ -21,6 +21,10 @@
         }
     }
 
+    &__for-absolute {
+        position: relative;
+    }
+
     &__pre-title {
         font-family: $fontTimesNewRoman;
         font-weight: 400;
@@ -152,12 +156,21 @@
     }
 
     &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
         @include tablet {
-            display: flex;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
+            @include tablet {
+            margin-bottom: 40px;
+            }
+            @include desktop {
+                margin-bottom: 48px;
+            }
         }
+
     }
 
 .three-slider {
@@ -175,6 +188,11 @@
     }
 
     &__buttons {
+        @media  screen and (max-width:1023px) {
+            position: absolute;
+            top: 222px;
+            left: 0px;
+        }
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -182,25 +200,31 @@
         gap: 32px;
 
         @include tablet {
+            width: 428px;
             padding-left: 23px;
+            margin-left: calc(100% - 428px);
             justify-content: flex-start;
         }
-    }
+        @include desktop {
+            width: 548px;
+            margin-left: calc(100% - 548px);
+        }
 
-    .three-slider__left,
-    .three-slider__right {
+        .three-slider__left,
+        .three-slider__right {
             background-color: transparent;
             border: none;
             cursor: pointer;
             transition: fill $transition;
         }
-    
-    .three-slider__left:hover>.icon-left {
+        
+        .three-slider__left:hover>.icon-left {
             fill: $AccentColor;
         }
-    
-    .three-slider__right:hover>.icon-right {
+        
+        .three-slider__right:hover>.icon-right {
             fill: $AccentColor;
+        }
     }
 
         .three-time {
@@ -222,7 +246,7 @@
                     gap: 40px;
                 }
             }
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1023px) {
                 .slick-list {
                     padding: 0 30% 0 0 !important;
                 }
