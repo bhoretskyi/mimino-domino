@@ -185,13 +185,14 @@
   .slick-next {
     top: 120%;
     transition: $transition;
+    
   }
   .slick-prev:before,
   .slick-next:before {
     content: '';
   }
   .slick-prev {
-    left: 70%;
+    left: 60%;
     background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
@@ -206,8 +207,12 @@
     background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
-    right: 0;
+    right: 10%;
+    @include tablet {
+      right: 0%;
+    }
   }
+
   .slick-next:focus,
   .slick-next:hover {
     background: url(/src/images/svg/arrow-right-yellow.svg) 0 0 /100% no-repeat;
