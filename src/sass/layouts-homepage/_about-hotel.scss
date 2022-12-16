@@ -183,7 +183,9 @@
 
 .slider-item-hotel {
     
-    @include tablet {}
+    @include tablet {
+
+    }
 
     @include desktop {
         width: 254px;
@@ -196,12 +198,14 @@
     width: 330px;
     margin-bottom: 72px;
     box-shadow: $SmallShadow;
+    
     background: #dadada;
     border-radius: 2px;
 
     @include tablet {
         width: 428px;
         margin-top: -28px;
+        
     }
 
     @include desktop {
@@ -252,22 +256,26 @@
         background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
     }
 
+        .slick-list {
+            margin-left: -15px;
+            padding: 0 0 0 30% !important;
+            @include tablet {
+                    padding: 0 !important;
+                    margin-left: 0;
+                }
+            .slick-track {
+                display: flex;
+                gap: 25px;
     
-}
-
-.about-hotel_slider .slick-list {
-    margin-left: -15px;
-
-
-    .slick-track {
-        display: flex;
-        gap: 25px;
-
-        @include tablet {
-            gap: 40px;
+                @include tablet {
+                    gap: 40px;
+                }
+            }
         }
-    }
+
 }
+
+
 
 
 .about-hotel_slick_foto {
