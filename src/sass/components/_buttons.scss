@@ -98,8 +98,12 @@
     border: 1px solid $AccentColor;
     border-radius: 25px;
     
-    width: 384px;
+    max-width: 384px;
     min-height: 64px;
+    
+    @include mobile {
+        width: 384px;
+    }
 
     @include tablet {
         font-size: 24px;
