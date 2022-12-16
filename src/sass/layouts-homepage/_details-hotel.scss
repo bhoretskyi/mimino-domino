@@ -213,6 +213,9 @@ z-index: 20;
         top: 326px;
         left: 630px;
     }
+    @include desktop {
+        left: 840px;
+    }
 
     }
         
