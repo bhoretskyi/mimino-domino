@@ -1,0 +1,36 @@
+.lux {
+    &__two-container {
+        @media screen and (max-width:1279px) {
+            background-image: none;
+        }
+    }
+
+    .two-time {
+        width: 284px;
+    
+        @include tablet {
+            width: 428px;
+        }
+    
+        @include desktop {
+            width: 548px;
+        }
+    
+        &__img {
+            width: 100%;
+        }
+    
+        .slick-list .slick-track {
+            gap: 16px;
+    
+            @include tablet {
+                gap: 40px;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            .slick-list {
+                padding: 0 0 0 30% !important;
+            }
+        }
+    }
+}

@@ -155,37 +155,125 @@ z-index: 10;
 }
 
 .details-hotel-slick{
-    display: flex;
-    margin-left: 0;
-    width: 374px;
-    z-index: 10;
-
-    @media  screen and (min-width: 1024px) {
+position: relative;
+padding: 0px;
+margin-left: -15px;
+width: 374px;
+z-index: 20;
+    @include tablet {
         width: 662px;
+        margin-bottom: 0;
+        margin-left: -12px;
+    }
+    @include desktop {
+        width: 874px;
+        margin-left: -33px;
     }
 
-         @media screen and (min-width: 1280px){
-    width: 874px;
-         }
+    & .slick-list{
+        overflow: hidden;
+        margin-right: 0;
+    }
+
+    @include desktop {
+        width: 874px;
+        margin-left: -33px;
+    }
+
+    & .slick-list{
+        overflow: hidden;
+    }
 
 
+    & .slick-arrow {
+        position: absolute;
+        top: 318px;
+        // margin: -30px 0px 0px 0px;
+        z-index: 10;
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+    @include tablet{
+        top: 326px;
+    }
+
+    }
+        
+
+    & .slick-arrow {
+        position: absolute;
+        top: 318px;
+        // margin: -30px 0px 0px 0px;
+        z-index: 10;
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+    @include tablet{
+        top: 326px;
+    }
+
+    }
+        
+
+
+    & .slick-arrow.slick-prev {
+        left: 270px;
+        
+        background: url(/src/images/svg/arrow-left-white.svg) 0 0 / 100% no-repeat;
+        @include tablet{
+left: 568px;
+        }
+@include desktop{
+    left: 776px;
+}}
+
+
+    & .slick-arrow.slick-next {
+        right: 0px;
+        background: url(/src/images/svg/arrow-right-white.svg) 0 0 / 100% no-repeat;
+    }
+
+     & .slick-prev:before{
+        content: '';
+            background: url(/src/images/svg/arrow-left-white.svg) 0 0 /100% no-repeat;
+            width: 32px;
+            height: 32px;
+            z-index: 5;
+        }
+     
+    & .slick-next:before {
+    content: '';
+    background: url(/src/images/svg/arrow-right-white.svg) 0 0 /100% no-repeat;
+    width: 32px;
+    height: 32px;
+    z-index: 5;
 }
 
-.img-wrap{
 
-
-    margin-right: 20px;
-    
+    & .slick-track {
+        display: flex;
+        gap: 20px;
     
         @media screen and (min-width: 1024px) {
-            margin-right: 34px;
+            gap: 32px;
         }
     
         @media screen and (min-width: 1280px) {
-            margin-right: 86px;
+            gap: 87px;
         }
-    
-}
+    }
+    & .slick-next:focus,
+    & .slick-next:hover {
+    background: url(/src/images/svg/arrow-right-yellow.svg) 0 0 /100% no-repeat;
+    }
+
+    & .slick-prev:focus,
+    & .slick-prev:hover {
+    background: url(/src/images/svg/arrow-left-yellow.svg) 0 0 /100% no-repeat;
+    }}
+
+
+
 
 
 .hotel-bg-line1 {

@@ -7,7 +7,7 @@
     letter-spacing: 0.02em;
     color: $AccentColor;
 
-    background: $btnGreyColor;
+    background-color: $btnGreyColor;
     border: 2px solid $btnWhiteColor;
     border-radius: 25px;
     width: 236px;
@@ -22,7 +22,64 @@
 }
 
 .btn__desktop {
-    background: $btnBlackColor;
+    background-color: $btnBlackColor;
+    
+    transition: border $transition;
+    &:hover, &:focus {
+        border: 2px solid $AccentColor;
+    }
+}
+
+.btn__restoran {
+    background-color: $btnBlackColor;
+    border: 2px solid $backGroundBeige;
+
+    @include tablet {
+        border: 2px solid #F0ECD6;
+    }
+    @include desktop {
+        border: 2px solid $backGroundBeige;
+    }
+    
+    transition: border $transition, background-color $transition;
+    
+    &:hover, &:focus {
+        border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
+    }
+}
+
+.btn__hotel--light {
+    background-color: $btnBlackColor;
+    border: 2px solid $backGroundBeige;
+
+    @include tablet {
+        border: 2px solid #F0ECD6;
+    }
+    @include desktop {
+        border: 2px solid $btnWhiteColor;
+    }
+    
+    transition: border $transition, background-color $transition;
+    &:hover, &:focus {
+        border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
+    }
+}
+
+.btn__hotel--dark {
+    background-color: $btnBlackColor;
+    border: 2px solid #F0ECD6;
+
+    @include tablet {
+        border: 2px solid $btnWhiteColor;
+    }
+    
+    transition: border $transition, background-color $transition;
+    &:hover, &:focus {
+        border: 2px solid $AccentColor;
+        background-color: $btnWhiteColor;
+    }
 }
 
 .btn__room {
@@ -49,9 +106,7 @@
         line-height: 1.21;
         width: 434px;
     }
-     transition: color $transition;
-    transition: background-color $transition;
-   
+     transition: color $transition, background-color $transition;
     &:hover, &:focus {
         color: $textColorBlack;
         background-color: $AccentColor;

@@ -1,7 +1,3 @@
-// td {
-//   outline: 1px solid black;
-// }
-
 .menu__flex-wrapper {
   @include tablet {
     display: flex;
@@ -14,30 +10,70 @@
   }
 }
 
-.menu__table:not(:first-child) {
-  margin-top: 20px;
-}
-
 .section-restaurant__menu {
-  padding: 32px 15px;
   background-color: #f0ecd6;
 
-  @include tablet {
-    padding-top: 58px;
-    padding-bottom: 40px;
-  }
-
   @include desktop {
-    max-width: 1600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 58px;
-    padding-bottom: 60px;
   }
 }
 
 .section-restaurant__menu .container {
-  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 34.8%,
+    rgba(186, 186, 186, 0.4) 35%,
+    rgba(0, 0, 0, 0) 35.1%,
+    rgba(0, 0, 0, 0) 64.8%,
+    rgba(186, 186, 186, 0.4) 65%,
+    rgba(0, 0, 0, 0) 65.1%
+  );
+  @include tablet {
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 25.9%,
+      rgba(186, 186, 186, 0.4) 25.9%,
+      rgba(186, 186, 186, 0.4) 26%,
+      rgba(0, 0, 0, 0) 26%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.1%,
+      rgba(0, 0, 0, 0) 50.1%,
+      rgba(0, 0, 0, 0) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.6%,
+      rgba(0, 0, 0, 0) 72.6%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  @include desktop {
+    padding-top: 58px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0) 25.9%,
+      rgba(186, 186, 186, 0.4) 25.9%,
+      rgba(186, 186, 186, 0.4) 26%,
+      rgba(0, 0, 0, 0) 26%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(186, 186, 186, 0.4) 50%,
+      rgba(186, 186, 186, 0.4) 50.1%,
+      rgba(0, 0, 0, 0) 50.1%,
+      rgba(0, 0, 0, 0) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.5%,
+      rgba(186, 186, 186, 0.4) 72.6%,
+      rgba(0, 0, 0, 0) 72.6%,
+      rgba(0, 0, 0, 0)
+    );
+  }
 }
 
 .menu__table {
@@ -48,6 +84,15 @@
 .menu__table--down {
   @media screen and (max-width: 1023px) {
     margin-top: 16px;
+  }
+  @include tablet {
+    margin-top: 20px;
+  }
+}
+
+.menu__table--down-cancelled {
+  @include tablet {
+    margin-top: 0px;
   }
 }
 
@@ -98,11 +143,11 @@
   color: $textColorBlack;
 
   @include tablet {
-    width: 293px;
+    width: 270px;
   }
 
   @include desktop {
-    width: 413px;
+    width: 375px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -110,6 +155,22 @@
 
 .menu__dish--down {
   padding-top: 8px;
+
+  @include desktop {
+    padding-top: 12px;
+  }
+}
+
+.menu__dish--padding-calcell {
+  padding-bottom: 0;
+}
+
+.menu__dish-desserts--down {
+  padding-bottom: 11px;
+
+  @include desktop {
+    padding-bottom: 12px;
+  }
 }
 
 .menu__portions {
@@ -163,55 +224,59 @@
   margin-top: 32px;
 
   @include tablet {
-    margin-top: 60px;
+    margin-top: 40px;
     margin-right: 0;
     margin-left: auto;
   }
-}
-
-// ----------------------------------------Горизонтальні лінії
-.menu__flex-wrapper::after {
-  @include tablet {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 759px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
 
   @include desktop {
-    left: 942px;
+    margin-top: 30px;
   }
 }
 
-.menu__flex-wrapper::before {
-  @include desktop {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 640px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-}
+// ----------------------------------------Горизонтальні лінії через before/after
+// .menu__flex-wrapper::after {
+//   @include tablet {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 759px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
 
-.menu__title::before {
-  @include desktop {
-    content: '';
-    width: 616px;
-    position: absolute;
-    top: -58px;
-    left: 338px;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-}
+//   @include desktop {
+//     left: 942px;
+//   }
+// }
+
+// .menu__flex-wrapper::before {
+//   @include desktop {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 640px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
+// }
+
+// .menu__title::before {
+//   @include desktop {
+//     content: '';
+//     width: 616px;
+//     position: absolute;
+//     top: -58px;
+//     left: 338px;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
+//     transform: rotate(90deg);
+//     transform-origin: top left;
+//   }
+// }

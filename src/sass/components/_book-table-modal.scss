@@ -26,7 +26,7 @@
     transition: all .3s;
     padding: 15px;
     width: 100%;
-    z-index: 30;
+    z-index: 1000;
 
     @include mobile {
         max-width: 414px;

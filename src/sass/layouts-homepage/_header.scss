@@ -1,206 +1,145 @@
 .top{
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-}
+    position: relative;
 
-.header-container{
-    margin-top: 16px;
-    
-    @include tablet{
-        margin-top: 24px;
-    }
-    @include desktop{
-        display: flex;
-    }
-}
+    .header-container{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 65px;
+        z-index: 999;
 
-.nav{
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // justify-content: space-between;
-
-    @include desktop{
-        margin-right: 60px;
+        @include tablet{
+            height: 100px;
         }
-}
-.header-index{
-    display: block;
-}
-.header-contacts{
-    display: flex;
-    justify-content: space-between;
-}
 
-.contacts-list{
-    display: flex;
-    margin: 0;
-    
-    @include mobile{
-        gap: 20px;
-    }
-    
-    @include tablet{
-        gap: 70px;
-    }
-}
-
-// @media screen and (max-width: 413px){
-//     .contacts-list{
-//         justify-content: space-between;
-//     }
-// }
-    
-.contacts-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
-
-.logo{
-    font-family: 'Film P3';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
-    color: $titleColorWhite;
-    text-decoration: none;
-    text-transform: uppercase;
-    
-    @include mobile{
-        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        gap: 60px; 
     }
 
-    @include tablet{
-        margin-right: 90px;
-        font-size: 40px;
-        line-height: 1.075;
-        
-    }
-
-    @include desktop{
-        margin-right: 95px;
-    }
-}
-
-@media screen and (max-width: 413px){
-    .logo{
+    .nav{
+        display: flex;
+        align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
-}
 
-.text-nav{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color:$AccentColor;
-
-    @include mobile{
-        margin-right: 5px;
+    .contacts-list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @include mobile {
+            gap: 20px;
+        }
+        @include tablet{
+            gap: 70px;
+        }
+    }
         
-    }
-    
-    @include tablet {
-        margin-right: 30px;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (max-width:413px) {
-    .text-nav{
-        justify-content: space-between;
-    }
-}
-
-.contacts-number{   
-    display: flex;
-    
-    @include tablet{
-        border: 1px solid $AccentColor ;
-        border-radius: 2px;
-        height: 40px;
-        
-    }
-}
-
-.decoration-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-
-    @include tablet{
-
-    }
-}
-
-
-
-.phone-contact{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: $titleColorWhite;
-    display: none;
-    margin-right: 8px;
-    margin-left: 8px;
-   
-    
-
-    @include tablet{
-        display: block;
-        // margin-right: 8px;
-        // margin-left: 8px;
-        // width: 100px;
-    }
-}
-
-.soci{ 
-    display: none;
-
-    @include desktop{
+    .contacts-item{
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5px;
+        @include mobile {
+            gap: 12px;
+        }
+        @include desktop {
+        gap: 32px;
+        }
     }
-}
 
-.soci-list{
-    display: none;
+    .logo{
+        font-family: 'Film P3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.08;
+        letter-spacing: 0.3em;
+        color: $titleColorWhite;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include mobile {
+            font-size: 36px;
+        }
+        @include tablet{
+            font-size: 40px;
+            line-height: 1.075;   
+        }
+    }
 
-    @include tablet{
+    .text-nav{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color:$AccentColor;
+        @include mobile {
+        font-size: 16px;
+        }
+        @include tablet {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    .contacts-number{   
         display: flex;
-        flex-direction: row;
-        gap: 20px;
+        align-items: center;
+        
+        @include tablet{
+            border: 1px solid $AccentColor ;
+            border-radius: 2px;
+            height: 40px;
+            
+        }
     }
-}
 
-.icon{
-    fill:$AccentColor;  
+    .phone-contact{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: $titleColorWhite;
 
-    @include tablet{
+        display: none;
+        margin-right: 8px;
         margin-left: 8px;
+    
+        @include tablet{
+            display: block;
+        }
     }
-}
 
-.svg-phone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .soci{ 
+        @media screen and (max-width:1279px) {
+            display: none;
+        }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 23px;
+    }
 
-     @include tablet{
-        //  margin-left: 8px;
+    .icon{
+        fill:$AccentColor;  
+        @include tablet{
+            margin-left: 8px;
+        }
+    }
+
+    .svg-phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet{
+            //  margin-left: 8px;
+        }
     }
 }

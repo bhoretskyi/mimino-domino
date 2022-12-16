@@ -5,42 +5,37 @@
     padding-bottom: 20px;
     background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0) 34.8%,
-      rgba(186, 186, 186, 0.4) 35%,
-      rgba(0, 0, 0, 0) 35.1%,
-      rgba(0, 0, 0, 0) 64.8%,
-      rgba(186, 186, 186, 0.4) 65%,
-      rgba(0, 0, 0, 0) 65.1%
+      #0000 33.7%,
+      #bababa66 34.1%,
+      #0000 34.2% 66.2%,
+      #bababa66 66.5%,
+      #0000 66.7%
     );
     @include tablet {
       padding-top: 120px;
       padding-bottom: 32px;
       background-image: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0) 23.8%,
-        rgba(186, 186, 186, 0.4) 24%,
-        rgba(0, 0, 0, 0) 24.1%,
-        rgba(0, 0, 0, 0) 50.8%,
-        rgba(186, 186, 186, 0.4) 50%,
-        rgba(0, 0, 0, 0) 51.1%,
-        rgba(0, 0, 0, 0) 75.8%,
-        rgba(186, 186, 186, 0.4) 76%,
-        rgba(0, 0, 0, 0) 76.1%
+        #0000 27%,
+        #bababa66 27.2%,
+        #0000 27.3% 49.9%,
+        #bababa66 50.1%,
+        #0000 50.2% 73%,
+        #bababa66 73.2%,
+        #0000 73.3%
       );
     }
     @include desktop {
       padding-bottom: 50px;
       background-image: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0) 23.8%,
-        rgba(186, 186, 186, 0.4) 24%,
-        rgba(0, 0, 0, 0) 24.1%,
-        rgba(0, 0, 0, 0) 50.8%,
-        rgba(186, 186, 186, 0.4) 50%,
-        rgba(0, 0, 0, 0) 51.1%,
-        rgba(0, 0, 0, 0) 75.8%,
-        rgba(186, 186, 186, 0.4) 76%,
-        rgba(0, 0, 0, 0) 76.1%
+        #0000 26.3%,
+        #bababa66 26.5%,
+        #0000 26.6% 49.9%,
+        #bababa66 50.1%,
+        #0000 50.2% 73.7%,
+        #bababa66 73.9%,
+        #0000 74%
       );
     }
   }
@@ -197,25 +192,29 @@
   .slick-prev,
   .slick-next {
     top: 120%;
+    transition: $transition;
   }
   .slick-prev:before,
   .slick-next:before {
     content: '';
   }
   .slick-prev {
-    left: 80%;
+    left: 70%;
     background: url(/src/images/svg/arrow-right.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
+    @include tablet {
+      left: 77%;
+    }
     @include desktop {
-      left: 85%;
+      left: 82%;
     }
   }
   .slick-next {
     background: url(/src/images/svg/arrow-left.svg) 0 0 /100% no-repeat;
     width: 32px;
     height: 32px;
-    left: 95%;
+    right: 0;
   }
   .slick-next:focus,
   .slick-next:hover {

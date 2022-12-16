@@ -1,5 +1,5 @@
 
- $('.about-restaurant_slider').slick({
+$('.about-restaurant_slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
@@ -13,14 +13,15 @@ $('.lux-time').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 300,
+  speed: 200,
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   adaptiveHeight: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
-      slidesToShow: 1.5,
+      centerMode: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
     }
   }]
@@ -30,6 +31,54 @@ $('.left').on("click", function () {
 })
 $('.right').on("click", function () {
   $('.lux-time').slick('slickNext');
+});
+
+$('.two-time').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }]
+});
+$('.left-two').on("click", function () {
+  $('.two-time').slick('slickPrev');
+})
+$('.right-two').on("click", function () {
+  $('.two-time').slick('slickNext');
+});
+
+$('.three-time').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }]
+});
+$('.left-three').on("click", function () {
+  $('.three-time').slick('slickPrev');
+})
+$('.right-three').on("click", function () {
+  $('.three-time').slick('slickNext');
 });
 
 
@@ -55,12 +104,50 @@ $(document).ready(function () {
 });
 
 $('.details-hotel-slick').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+   cssEase: 'linear',
+    centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+});
+
+$('.details-restaurant-slick').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+   cssEase: 'linear',
+    centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+});
+
+
+$('.about-kitchen-slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
-  centerMode: true,
-  variableWidth: true
+  slidesToShow: 2,
+  adaptiveHeight: true,
 });
 
 $(document).ready(function () {
@@ -95,5 +182,15 @@ $(document).ready(function () {
     variableWidth: true,
     centerMode: true,
   });
+});
+
+$('.about-hotel_slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  adaptiveHeight: true,
+  variableWidth: true,
+  arrows: true,
 });
 

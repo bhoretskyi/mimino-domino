@@ -1,4 +1,4 @@
-<section class="section-restaurant__menu">
+<section id="menu" class="section-restaurant__menu">
   <div class="container">
     <h2 class="menu__title">Меню ресторану</h2>
 
@@ -137,7 +137,9 @@
 
       <div class="menu__flex-child">
         <!-- Салати -->
-        <table class="menu__table menu__table--down">
+        <table
+          class="menu__table menu__table--down menu__table--down-cancelled"
+        >
           <thead>
             <tr>
               <th colspan="3" class="menu__category">Салати</th>
@@ -200,17 +202,19 @@
           </thead>
           <tbody>
             <tr>
-              <td class="menu__dish">Торт наполеон</td>
-              <td class="menu__portions">230 г</td>
-              <td class="menu__price">300 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">
+                Торт наполеон
+              </td>
+              <td class="menu__portions menu__dish-desserts--down">230 г</td>
+              <td class="menu__price menu__dish-desserts--down">300 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Торт маковий</td>
-              <td class="menu__portions">230 г</td>
-              <td class="menu__price">300 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">Торт маковий</td>
+              <td class="menu__portions menu__dish-desserts--down">230 г</td>
+              <td class="menu__price menu__dish-desserts--down">300 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Тірамісу</td>
+              <td class="menu__dish menu__dish--padding-calcell">Тірамісу</td>
               <td class="menu__portions">120 г</td>
               <td class="menu__price">260 грн</td>
             </tr>
@@ -226,27 +230,29 @@
           </thead>
           <tbody>
             <tr>
-              <td class="menu__dish">Чай чорний/зелений</td>
-              <td class="menu__portions">500 мл</td>
-              <td class="menu__price">300 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">
+                Чай чорний/зелений
+              </td>
+              <td class="menu__portions menu__dish-desserts--down">500 мл</td>
+              <td class="menu__price menu__dish-desserts--down">300 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Еспресо</td>
-              <td class="menu__portions">30 мл</td>
-              <td class="menu__price">100 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">Еспресо</td>
+              <td class="menu__portions menu__dish-desserts--down">30 мл</td>
+              <td class="menu__price menu__dish-desserts--down">100 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Американо</td>
-              <td class="menu__portions">150 мл</td>
-              <td class="menu__price">100 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">Американо</td>
+              <td class="menu__portions menu__dish-desserts--down">150 мл</td>
+              <td class="menu__price menu__dish-desserts--down">100 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Капучино</td>
-              <td class="menu__portions">200 мл</td>
-              <td class="menu__price">160 грн</td>
+              <td class="menu__dish menu__dish-desserts--down">Капучино</td>
+              <td class="menu__portions menu__dish-desserts--down">200 мл</td>
+              <td class="menu__price menu__dish-desserts--down">160 грн</td>
             </tr>
             <tr>
-              <td class="menu__dish menu__dish--down">Лате</td>
+              <td class="menu__dish menu__dish--padding-calcell">Лате</td>
               <td class="menu__portions">200 мл</td>
               <td class="menu__price">160 грн</td>
             </tr>
@@ -254,8 +260,12 @@
         </table>
       </div>
     </div>
-    <button type="button" class="btn menu-button btn__desktop js-open-modal" data-modal="1">
-    Забронювати столик
-  </button>
+    <button
+      type="button"
+      class="btn menu-button btn__restoran js-open-modal"
+      data-modal="1"
+    >
+      Забронювати столик
+    </button>
   </div>
 </section>

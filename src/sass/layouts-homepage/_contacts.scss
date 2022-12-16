@@ -1,39 +1,79 @@
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-
-  width: 100%;
-}
-
 .contacts-sect {
-  position: relative;
   display: block;
   max-width: 414px;
   height: 599px;
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 32px;
+  background-color: $backGroundBeige;
+  background-image: linear-gradient(
+    90deg,
+    #0000 33.7%,
+    #bababa66 34.1%,
+    #0000 34.2% 66.2%,
+    #bababa66 66.5%,
+    #0000 66.7%
+  );
 
   @include tablet {
     max-width: 1024px;
     height: 521px;
     padding-top: 56px;
     padding-bottom: 40px;
+    background-image: linear-gradient(
+      90deg,
+      #0000 27%,
+      #bababa66 27.2%,
+      #0000 27.3% 49.9%,
+      #bababa66 50.1%,
+      #0000 50.2% 73%,
+      #bababa66 73.2%,
+      #0000 73.3%
+    );
   }
 
   @include desktop {
     max-width: 1280px;
     height: 550px;
     padding-bottom: 73px;
+    background-image: linear-gradient(
+      90deg,
+      #0000 26.3%,
+      #bababa66 26.5%,
+      #0000 26.6% 49.9%,
+      #bababa66 50.1%,
+      #0000 50.2% 73.7%,
+      #bababa66 73.9%,
+      #0000 74%
+    );
   }
 }
-.contacts-bg {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-color: $backGroundBeige;
-  z-index: -999;
+.contacts-container {
+  width: 100%;
+
+  padding-right: 15px;
+  padding-left: 15px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mobile {
+    max-width: 414px;
+  }
+
+  @include tablet {
+    max-width: 1024px;
+
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+
+    padding-right: 85px;
+    padding-left: 85px;
+  }
 }
 
 .contacts__title {
@@ -245,56 +285,6 @@ img {
   }
 }
 
-.container-lines {
-  content: '';
-  position: absolute;
-  height: 550px;
-  top: 0;
-  border: 1px solid rgba(186, 186, 186, 0.4);
-  filter: blur(0.5px);
-  z-index: -1;
-}
-
-.container-line1 {
-  left: 140px;
-
-  @include tablet {
-    left: 278px;
-  }
-
-  @include desktop {
-    left: 338px;
-  }
-}
-
-.container-line2 {
-  left: 274px;
-
-  @include tablet {
-    left: 512px;
-  }
-
-  @include desktop {
-    left: 640px;
-  }
-}
-.container-line3 {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 1px;
-  height: 550px;
-  top: 0;
-
-  border: 1px solid rgba(186, 186, 186, 0);
-
-  @include tablet {
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    left: 745px;
-  }
-
-  @include desktop {
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    left: 941px;
-  }
+.contacts__map img {
+  width: 100%;
 }
