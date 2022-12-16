@@ -61,21 +61,21 @@
 
 
 .kitchen-img__up {
-    width: 244px;
+    min-width: 244px;
     height: auto;
     margin-left: auto;
     margin-bottom: 32px;
     box-shadow: $SmallShadow;
 
     @include tablet {
-        width: 400px;
+        min-width: 400px;
         position: absolute;
         top: -32px;
         right: 112px;
         box-shadow: $BigShadow;
     }
     @include desktop {
-        width: 460px;
+        min-width: 460px;
         top: -33px;
         right: 180px;
     }
@@ -96,16 +96,16 @@
 }
 
 .kitchen-img__down {
-    width: 200px;
+    min-width: 200px;
     height: auto;
     box-shadow: $SmallShadow;
 
     @include tablet {
-        width: 350px;
+        min-width: 350px;
         box-shadow: $BigShadow;
     }
     @include desktop {
-        max-width: 460px;
+        min-width: 460px;
     }
 }
 
@@ -145,6 +145,13 @@
 
   @include desktop {
     width: 548px;
+  }
+
+  .slick-list {
+    @include desktop {
+        transform: translateX(25px);
+    }
+    
   }
 
   .slick-prev,
